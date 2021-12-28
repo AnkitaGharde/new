@@ -1,0 +1,352 @@
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+
+
+
+    <section class="banner-sec">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+              <div class="carousel-inner">
+                <div class="item active"> <img src="{% static 'CA_app/images/IS -banner-1.jpg'%}" alt="banner1"> </div>
+                <div class="item"> <img src="{% static 'CA_app/images/IT-banner-2.jpg'%}" alt="banner2"> </div>
+                <div class="item"> <img src="{% static 'CA_app/images/Accounting-banner-3.jpg'%}" alt="banner3"> </div>
+                <div class="item"> <img src="{% static 'CA_app/images/GST-BANNER-4.jpg'%}" alt="banner4"> </div>
+                <div class="item"> <img src="{% static 'CA_app/images/PAYROLL-BANNER-5.jpg'%}" alt="banner5"> </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a>            </div>
+    </section>
+
+<section class="enquiry-sec">
+        <div class="container">
+            <h2>About <span>Us</span></h2>
+        </div>
+
+    <hr>
+    <div class="col-sm-6">
+
+
+        <h1><b style="color:blue;">Meet,</b><br> <b style="color:red; text-indent: 30px;">Virtual CA</b></h1>
+        <div class="text-center">
+        <p><h4>A reputed Tax Consultant &amp;<b class="text-primary "> Chartered Accountant</b>, who has </h4><h4 style="text-indent: 40px;">helped many individuals/organizations</h4> <h4 style="text-indent: 100px;">to establish <b class="text-danger">  business in  India</b>
+ </h4></p>
+        </div>
+    </div>
+     <div class="text-center">
+<div class="text-right" >
+    <img src="{% static 'CA_app/images/about4.png'%}" height="400px" width="600px">
+
+</div>
+     </div>
+
+
+</section>
+    <section class="news-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>News <span>Section</span></h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item-box">
+                        <h3>News</h3>
+                        <marquee id="m2" height="283" direction="up" srolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                            <table id="ctl00_DataList1" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a class="hedingnews">18 Dec 19</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets of 5 Years</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">GST Council meeting today: Lease rates, refund for exporters on agenda</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">GST Council meeting today. Will Nirmala Sitharaman increase GST rates, slabs?</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">CBIC further extends enabling New Changes in GSTR-9 and GSTR-9C to Dec 21</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a class="hedingnews">18 Dec 2021</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">Industry Favours New GSTR Slow Implementation &amp; 4-digits HSN Code</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">Centre releases over Rs 35,000 crore as pending GST compensation to states </a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">States get GST dues ahead of key meet</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">Under Fire, Govt Releases Rs 35,298 Crore GST Compensation to States</a> </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="news2d"> <a href="#">CBDT extends date for Third Instalment of Advance Tax for FY 2019-20 in North Eastern States</a> </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item-box">
+                        <h3>Due Date Reminder</h3>
+                        <table id="ctl00_DataListGovind" cellspacing="0" border="0" style="border-collapse:collapse;">
+                            <tbody>
+                                <tr>
+                                    <td><a id="ctl00_DataListGovind_ctl00_lb1" href="#">Jan</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl01_lb1" href="#">Feb</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl02_lb1" href="#">Mar</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl03_lb1" href="#">Apr</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl04_lb1" href="#">May</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl05_lb1" href="#">June</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="ctl00_DataListGovind_ctl06_lb1" href="#">July</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl07_lb1" href="#">Aug</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl08_lb1" href="#">Sep</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl09_lb1" href="#">Oct</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl10_lb1" href="#">Nov</a></td>
+                                    <td><a id="ctl00_DataListGovind_ctl11_lb1" href="#">Dec</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a id="ctl00_DataListGovind_ctl12_lb1" href="#">All</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <marquee id="ml" height="220" direction="up" srolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                            <div class="news_blog"> <span class="hedingnews">30 Dec 19</span> <span class="arrownews">furnishing of challan-cum-statement in respect of tax deducted u/s 194-IA in month of November 19</span> <br>
+                            </div>
+                            <div class="news_blog"> <span class="hedingnews">30 Dec 19</span> <span class="arrownews">Due date for furnishing of challan-cum-statement in respect of tax deducted u/s 194-IB in month of November 19</span> <br>
+                            </div>
+                            <div class="news_blog"> <span class="hedingnews">07 Jan 20</span> <span class="arrownews">Payment of TDS of December 2019 (For Govt deductors paying through challan)</span> <br>
+                            </div>
+                            <div class="news_blog"> <span class="hedingnews">11 Jan 20</span> <span class="arrownews">Filing of GSTR-1 for the month of Dec, 2019 , whose turnover &gt; 1.5cr</span> <br>
+                            </div>
+                            <div class="news_blog"> <span class="hedingnews">13 Jan 20</span> <span class="arrownews">Filing of GSTR-6 for input service distributor for the month of December 2019</span> <br>
+                            </div>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-item-box">
+                        <h3>Blog News</h3>
+                        <marquee id="m2" height="283" direction="up" scrolldelay="20" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();">
+                            <li class="Prodetails"><span style="font-weight:bold;">09 Dec 2019</span> <span style="font-weight:bold;"><a target="_blank" href="#">About Us</a>  -</span>
+                                <span>ASSOCIATES&nbsp;is a professional firm of Chartered Accountants s...</span></li>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!--<section class="enquiry-sec">-->
+<!--        <div class="container">-->
+<!--            <h2>Why <span>Virtual CA ?</span></h2>-->
+<!--        </div>-->
+
+<!--                                <div class="ivan-custom-wrapper theme_default row-no-custom-ptop " style="">-->
+<!--                                    <div class="vc_row wpb_row vc_row-fluid">-->
+<!--                                        <div class="vc_col-sm-12 wpb_column vc_column_container " data-wow-delay="0ms">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                <div class="ivan-title-main vc_1442055500336 " data-wow-delay="0ms" data-wow-iteration="1">-->
+<!--                                                    <div class="ivan-title-wrapper  center">-->
+<!--                                                        <div class="title-wrapper  default-display">-->
+<!--                                                            <h2 class="title-heading">Why Virtual CA ?</h2>-->
+<!--                                                            <h4 class="sub">We are team of qualified &amp; experienced professionals who add value &amp; optimize the benefits accuring to clients, everyday.</h4>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash; END .wpb_wrapper &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END  wpb_column vc_column_container  &ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="ivan-custom-wrapper theme_default row-no-custom-ptop " style="">-->
+<!--                                    <div class="vc_row wpb_row vc_row-fluid">-->
+<!--                                        <div class="vc_col-sm-3 wpb_column vc_column_container " data-wow-delay="0ms">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                <div class="ivan-icon-box-wrapper vc_1442308104372">-->
+<!--                                                    <div class="ivan-icon-box-holder  " data-wow-delay="0ms" data-wow-iteration="1">-->
+<!--                                                        <div class="ivan-icon-box  normal circle large hover-circle shadow-box-effect center">-->
+<!--                                                            <div class="icon-box-holder"><span class="fa-stack main-icon-holder fa-4x"><i class="main-icon fa fa-cogs fa-stack-1x"></i></span></div>-->
+<!--                                                            <div class="icon-box-text-holder">-->
+<!--                                                                <div class="icon-box-text-inner">-->
+<!--                                                                    <h4 class="icon-box-title">Qualified Team</h4>-->
+<!--                                                                    <div class="icon-box-content">Our organisation is a congregation of qualified &amp; experienced professionals.</div>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash; END .wpb_wrapper &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END  wpb_column vc_column_container  &ndash;&gt;-->
+
+<!--                                        <div class="vc_col-sm-3 wpb_column vc_column_container " data-wow-delay="0ms">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                <div class="ivan-icon-box-wrapper vc_1442307808920">-->
+<!--                                                    <div class="ivan-icon-box-holder  " data-wow-delay="0ms" data-wow-iteration="1">-->
+<!--                                                        <div class="ivan-icon-box  normal circle large hover-circle shadow-box-effect center">-->
+<!--                                                            <div class="icon-box-holder"><span class="fa-stack main-icon-holder fa-4x"><i class="main-icon fa fa-star fa-stack-1x"></i></span></div>-->
+<!--                                                            <div class="icon-box-text-holder">-->
+<!--                                                                <div class="icon-box-text-inner">-->
+<!--                                                                    <h4 class="icon-box-title">Robust service</h4>-->
+<!--                                                                    <div class="icon-box-content">We offer sound financial solutions and advices that help you achieve your milestone with ease.</div>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+
+
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash; END .wpb_wrapper &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END  wpb_column vc_column_container  &ndash;&gt;-->
+
+<!--                                        <div class="vc_col-sm-3 wpb_column vc_column_container " data-wow-delay="0ms">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                <div class="ivan-icon-box-wrapper vc_1442307834350">-->
+<!--                                                    <div class="ivan-icon-box-holder  " data-wow-delay="0ms" data-wow-iteration="1">-->
+<!--                                                        <div class="ivan-icon-box  normal circle large hover-circle shadow-box-effect center">-->
+<!--                                                            <div class="icon-box-holder"><span class="fa-stack main-icon-holder fa-4x"><i class="main-icon fa fa-info fa-stack-1x"></i></span></div>-->
+<!--                                                            <div class="icon-box-text-holder">-->
+<!--                                                                <div class="icon-box-text-inner">-->
+<!--                                                                    <h4 class="icon-box-title">Legal Services</h4>-->
+<!--                                                                    <div class="icon-box-content">We provide services like company formation and company incorporation in India and help in doing business in india</div>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash; END .wpb_wrapper &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END  wpb_column vc_column_container  &ndash;&gt;-->
+
+<!--                                        <div class="vc_col-sm-3 wpb_column vc_column_container " data-wow-delay="0ms">-->
+<!--                                            <div class="wpb_wrapper">-->
+<!--                                                <div class="ivan-icon-box-wrapper vc_1442308479466">-->
+<!--                                                    <div class="ivan-icon-box-holder  " data-wow-delay="0ms" data-wow-iteration="1">-->
+<!--                                                        <div class="ivan-icon-box  normal circle large hover-circle shadow-box-effect center">-->
+<!--                                                            <div class="icon-box-holder"><span class="fa-stack main-icon-holder fa-4x"><i class="main-icon fa fa-edit fa-stack-1x"></i></span></div>-->
+<!--                                                            <div class="icon-box-text-holder">-->
+<!--                                                                <div class="icon-box-text-inner">-->
+<!--                                                                    <h4 class="icon-box-title">Taxation service</h4>-->
+<!--                                                                    <div class="icon-box-content">Direct tax consultancy together with innovative tax efficient strategies, provided by us form an integral part of viable business decisions.</div>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            &lt;!&ndash; END .wpb_wrapper &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div></section>-->
+<hr>
+<section class="enquiry-sec">
+        <div class="container">
+             <h2>Request a <span>Call Back</span></h2>
+        </div>
+</section>
+<hr>
+<div>
+<div class="col-sm-6">
+	<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276.5949944341593!2d79.08295379493441!3d21.13632155861258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0c011f8b8d1%3A0x66b92edeea5b5aee!2sVijay%20S%20Gulhane%20%26%20Co!5e0!3m2!1sen!2sin!4v1639398911226!5m2!1sen!2sin" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+	</div>
+</div>
+
+  <div class="col-sm-6">
+            <form method="post" action="/contact">
+                {% csrf_token %}
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+
+                        <label for="inputName">Your Name</label>
+                        <input type="text" name="Your_Name" class="form-control" id="inputName"/>
+
+                    </div>
+
+                    <div class=" form-group col-md-6 ">
+
+                        <label for="inputName"> Your Email*</label>
+                        <input type="email" name="Your_Email" class="form-control" id="inputName" required/>
+                    </div>
+
+                </div>
+                <div class=" form-group ">
+
+                    <label for="inputSubject">Your Subject</label>
+                    <input type="text" name="Your_Subject" class="form-control" id="inputSubject" />
+                </div>
+
+                <div class=" mb-3">
+                    <label for="inputSubject">Your Message *</label>
+                    <textarea class="form-control" name="Your_Message"   id="inputTextarea" required></textarea>
+                </div>
+                <br>
+
+                <button class="btn btn-primary" type="submit">Send</button>
+
+            </form>
+        </div>
+
+
+		</div>
+</div>
+
+{% endblock content %}
+

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Virtual CA Office</title>
+
+    <link rel="icon" href="{% static 'CA_app/images/ca_logo_new.jpg'%}" height="50px" width="50px" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="CA Portal is a complete website solution for Chartered Accountants in India which provides more than 100 customized templates for CA, CS, and Lawyers. " />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="{% static 'CA_app/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'CA_app/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'CA_app/css/style.css'%}">
+
+
+    <script src="{% static 'CA_app/js/jquery.min.js'%}"></script>
+    <script src="{% static 'CA_app/js/bootstrap.min.js'%}"></script>
+
+<style>
+
+
+</style>
+</head>
+
+<body>
+    <div id="result"></div>
+
+
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="container-inner">
+                    <div class="row">
+                        <div class="col-md-6 dt-sc-contact-number"> <a href="Mobile:9881164000"> <span class="fa fa-phone"></span><b>9881164000</b></a> <a href="mailto:Neuboticsit@gmail.com"> <span class="fa fa-envelope-o"></span> <b>Neuboticsit@gmail.com</b></a> </div>
+                        <div class="col-md-6">
+                            <ul class="dt-sc-social-icons">
+                                <li><a title="Facebook" href="#" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                                <li><a title="Twitter" href="#" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                                <li><a title="Youtube" href="#" target="_blank"><span class="fa fa-youtube"></span></a></li>
+                                <li><a title="Linkedin" href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+<!--            <div class="navbar-header">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+                        <div class="col-md-6">
+<!--                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+                  <div class="mylogo">
+                            <a href="#"><img src="{% static 'CA_app/images/ca_logo_new.jpg'%}" alt="logo" width="170px" height="150px"/></a>
+
+                        </div>
+                        </div>
+                        <div class="info col-md-6">
+                            <ul>
+                                <li><img src="{% static 'CA_app/images/time1.png'%}" height="40px" width="40px">
+                                    <p> <span class="heading"><b>Contact Time</b></span><b> Mon-Sat: 11AM -7:00PM </b></p>
+                                </li>
+                              <li>
+                                  <img src="{% static 'CA_app/images/mail2.png'%}" height="40px" width="40px">
+                                <p><span class="heading"><b>Leave a Message</b></span> <a href="mailto:Neuboticsit@gmail.com"> <b>Neuboticsit@gmail.com</b></a></p>
+                              </li>
+                            </ul>
+
+                            <ul>
+
+                                <li>
+                                <a href="{% url 'signup' %}"><p> <button type="button" class="btn btn-primary">SignUp</button>  </p></a>
+
+                                </li>
+                                <li>
+                                    <a href="{% url 'login' %}"><p> <button type="button" class="btn btn-primary">Login</button>  </p></a>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+<!--                    </div>-->
+<div>
+       <marquee width="100%" direction="right" height="30px">
+           <h4 class="CA"><b>GST registrations open!</b></h4>
+
+</marquee>
+</div>
+            <div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 1px;">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'about'%}">About Us</a></li>
+
+
+
+                           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Start A Business</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'proprietorship'%}">Proprietorship</a></li>
+                                        <li><a href="{% url 'partnership'%}">Partnership</a></li>
+                                        <li><a href="{% url 'one_person'%}">One Person Company</a></li>
+                                        <li><a href="{% url 'ltd_liability'%}">Limited Liability Partnership</a></li>
+                                        <li><a href="{% url 'private'%}">Private Limited Company</a></li>
+                                        <li><a href="{% url 'public'%}">Public Limited Company</a></li>
+
+                                    </ul>
+                                </li>
+
+
+
+
+
+
+                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Registrations</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown"> <a href="{% url 'gst_home'%}"> GST</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'reg'%}">GST-Registration</a></li>
+                                        <li><a href="{% url 'gst_change'%}">GST-Modification</a></li>
+                                        <li><a href="{% url 'gst_cancel'%}">GST-cancellation</a></li>
+
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"> <a href="{% url 'msme_home'%}"> MSME</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{%url 'msme_reg'%}">MSME-Registration</a></li>
+                                        <li><a href="{%url 'msme_change'%}">MSME-Modification </a></li>
+                                        <li><a href="{%url 'msme_cancel'%}">MSME-Cancellation </a></li>
+                                        <li><a href="{%url 'msme_lost'%}">MSME-Lost</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                         </li>
+
+                                <li><a href="{% url 'all_services'%}">Services</a></li>
+
+
+
+
+
+
+
+                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Tax Filing</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'incometax'%}">Income Tax Filing</a></li>
+                                        <li><a href="{% url 'business'%}">Business Tax Filing</a></li>
+                                        <li><a href="{% url 'gst_filing'%}">GST Filing</a></li>
+                                        <li><a href="{% url 'tds_return'%}">TDS Return</a></li>
+                                         <li><a href="{% url 'esi'%}">ESI Return</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                <div class="container">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="{% url 'blog'%}">Blog</a></li>
+<!--                      <li><a href="{% url 'contact'%}">Careers</a></li>-->
+                        <li><a href="{% url 'contact'%}">Contact Us</a></li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+</div>
+
+        </nav>
+
+    </header>
+

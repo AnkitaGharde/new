@@ -1,0 +1,4182 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,900&display=swap');
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    position: relative;
+    background-color: #fff !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a ul,
+li,
+span {
+    font-family: 'Muli', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mr_topI {
+    margin-top: 0px;
+}
+
+.payment_success_sec.landing_passport_sec,
+.payment_success_sec {
+    box-shadow: 2px 1px 6px 1px #aeaeae;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px auto;
+    width: 100%;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+/**/
+
+.form_sign .form-control {
+    color: #000;
+    font-weight: 600;
+}
+
+.form-control::placeholder {
+    font-weight: 400;
+}
+
+.form_area_new {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.form_area_new ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.form_area_new ul {
+    margin-left: 30px;
+}
+
+.breadcrum_area {
+    background-color: #383072;
+    padding: 10px;
+    width: 100%;
+    display: none
+}
+
+.list_state li a:hover {
+    text-decoration: none;
+    background-color: #726ab0;
+    color: #fff;
+    border: 1px solid #726ab0
+}
+
+.user_media img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 50%
+}
+
+.before_login a:hover {
+    text-decoration: none
+}
+
+.before_login a {
+    background-color: rgb(252, 155, 4);
+    display: inline-block;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: right;
+    margin-left: 20px
+}
+
+.login_status a:hover {
+    text-decoration: none
+}
+
+.main_h h4 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700
+}
+
+.inside_pull {
+    text-align: right
+}
+
+.inside_pull a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.profile_tabs li a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #535b61;
+    padding: 10px 0
+}
+
+.form_users {
+    max-width: 620px;
+    width: 100%;
+    float: left;
+    margin-right: 20px;
+}
+
+.bookings_order_tbl table tbody tr td.description_area img {
+    width: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px
+}
+
+.reload_icn a img {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px
+}
+
+.bookings_order_tbl table thead {
+    background-color: #e9ecef
+}
+
+.bookings_order_tbl table thead tr th {
+    padding: 15px
+}
+
+.bookings_order_tbl .table {
+    border: 1px solid #c8c8c8
+}
+
+.bookings_order_tbl table tbody tr td.status_i img {
+    width: 30px
+}
+
+.bookings_order_tbl table tbody tr td {
+    vertical-align: middle;
+    font-size: 15px;
+    color: #000;
+    line-height: 24px;
+    padding: 8px 15px
+}
+
+.booking_list_tabs {
+    max-width: 100%;
+    width: 100%;
+    display: inline-block
+}
+
+.view_more_tbl {
+    max-width: 140px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.view_more_tbl a {
+    text-align: center;
+    border: 1px solid #383072;
+    display: block;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 7px 15px;
+    color: #383072
+}
+
+.view_more_tbl a:hover {
+    text-decoration: none
+}
+
+.booking_tabs {
+    width: 100%;
+    display: inline-block
+}
+
+.booking_tabs .nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    color: #737373;
+    padding: 0 15px 5px 0;
+    margin-right: 20px;
+    position: relative
+}
+
+.booking_tabs .nav>li>a:focus,
+.booking_tabs .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent
+}
+
+.booking_tabs .nav-tabs>li.active>a,
+.booking_tabs .nav-tabs>li.active>a:focus,
+.booking_tabs .nav-tabs>li.active>a:hover {
+    color: #000;
+    cursor: default;
+    background-color: transparent;
+    border: 0 solid #ddd
+}
+
+.booking_tabs .nav-tabs>li.active>a::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #383072;
+    position: absolute;
+    bottom: -3px
+}
+
+.booking_tabs .nav-tabs {
+    border-bottom: 1px solid #ccc
+}
+
+.booking_tabs p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff
+}
+
+.booking_tabs .tab-content>.tab-pane {
+    padding: 30px 0
+}
+
+.all_company_info {
+    width: 100%;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 10px 0
+}
+
+.all_indi_plans {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px 0 0 0
+}
+
+.updation_area {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 86px;
+}
+
+.right_privacy h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000
+}
+
+.right_privacy p {
+    font-size: 14px;
+    line-height: 21px
+}
+
+.conditions_area {
+    max-width: calc(100% - 640px);
+    width: 100%;
+    float: left;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 5px
+}
+
+.profile_tabs li {
+    margin-bottom: 10px
+}
+
+.user_filling {
+    width: 100%;
+    display: inline-block;
+    padding: 0
+}
+
+.details_h h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700
+}
+
+.details_h {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+.profile_tabs li a.active {
+    background-color: #383072;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    font-weight: 700
+}
+
+.right_profile {
+    max-width: calc(100% - 283px);
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px
+}
+
+.left_profile {
+    max-width: 268px;
+    width: 100%;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px
+}
+
+.update_btn {
+    color: #fff;
+    background-color: #383072;
+    border-color: #383072;
+    padding: 7px 15px
+}
+
+.right_privacy {
+    border-bottom: 1px solid #858585;
+    padding: 10px 0;
+    margin-bottom: 10px
+}
+
+.profile_tabs li a img {
+    width: 20px;
+    margin-right: 5px
+}
+
+.contact_left h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.contact_left p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.whole_left_c {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.plans_heading {
+    display: inline-block;
+    cursor: default;
+    background-color: transparent;
+    border-bottom: 2px solid #0ebdf5;
+    white-space: normal;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #8b8b8b;
+    padding: 8px 15px 8px 0;
+    margin: 10px 0 5px 0;
+    margin-right: 30px;
+    position: relative
+}
+
+.about_content h1 {
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600
+}
+
+.about_bot_content h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700
+}
+
+.about_right img {
+    width: 100%;
+    border-bottom: 1px solid #ccc
+}
+
+.about_right h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    padding: 10px 15px 5px 15px
+}
+
+.about_right p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #9c9c9c;
+    padding: 0 15px 10px 15px
+}
+
+.about_bot_content p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: justify;
+    font-weight: 600
+}
+
+.about_left {
+    background-color: #f2f4f4;
+    padding: 15px
+}
+
+.about_left h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.about_left ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #9c9c9c;
+    font-weight: 600
+}
+
+.normal_content_about {
+    width: 100%;
+    display: block;
+    margin-bottom: 25px
+}
+
+.normal_content_about p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: justify
+}
+
+.about_left ul {
+    margin-top: 10px
+}
+
+.about_bot_content {
+    width: 100%;
+    display: block;
+    background-color: #f1f5f6;
+    padding: 15px;
+    margin-bottom: 25px
+}
+
+.about_right {
+    border: 1px solid #ccc;
+    display: block;
+    border-radius: 5px
+}
+
+.about_section {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+.about_soco ul li a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto
+}
+
+.all_finance_socials_links.about_soco ul li {
+    width: 23%
+}
+
+.normal_content_about h4 {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600
+}
+
+.normal_content_about ul {
+    margin-left: 35px;
+    padding-top: 15px;
+}
+
+.normal_content_about ul li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.terms_c_header {
+    width: 100%;
+    display: inline-block;
+    padding: 30px 0 0 0;
+    background-color: #8782ce;
+    margin-top: 0px;
+}
+
+.contact_right_o {
+    max-width: 49%;
+    width: 100%;
+    float: left;
+    border: 1px solid #ab2828;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right: 2%
+}
+
+.contact_right_t {
+    max-width: 49%;
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    border: 1px solid #5ca23e;
+    padding: 15px;
+    margin-bottom: 10px
+}
+
+.contact_right_th {
+    max-width: 100%;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid #3865a3;
+    padding: 15px
+}
+
+.right_c_media {
+    max-width: 50px;
+    width: 100%;
+    float: left;
+    margin-right: 10px
+}
+
+.contact_right_th .right_c_media {
+    max-width: 116px;
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 13px
+}
+
+.contact_right_th .right_c_content {
+    max-width: calc(100% - 127px);
+    width: 100%;
+    float: left
+}
+
+.right_c_media img {
+    width: 100%
+}
+
+.contact_right_inside {
+    max-width: 490PX;
+    display: block;
+    margin: 0 auto
+}
+
+.profress_inside h3 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profress_inside img {
+    display: block;
+    margin: 0px auto;
+}
+
+.home_cont img {
+    display: block;
+    margin: 20px auto 0px auto;
+}
+
+.home_cont h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0px 0px;
+    font-weight: 600;
+}
+
+.home_cont p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.home_cont p span {
+    display: block;
+    color: #fe5e2a;
+}
+
+.right_c_content p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    line-height: 27px;
+    text-transform: uppercase
+}
+
+.right_c_content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #000
+}
+
+.contact_right_o .right_c_media {
+    margin-top: 22px
+}
+
+.contact_right_t .right_c_media {
+    margin-top: 22px
+}
+
+.contact_right_th .right_c_content p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000;
+    line-height: 36px;
+    text-transform: uppercase
+}
+
+.contact_right_th .right_c_content h3 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #000
+}
+
+.all_contacts {
+    max-width: 430px;
+    width: 100%;
+    background-color: #8984d1;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0 auto 30px auto;
+    text-align: center
+}
+
+.divide_or {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0
+}
+
+.contact_email_content {
+    max-width: calc(100% - 65px);
+    width: 100%;
+    float: left
+}
+
+.contact_email_media {
+    max-width: 40px;
+    width: 100%;
+    float: left;
+    margin-right: 15px
+}
+
+.contact_email {
+    width: 70%;
+    display: inline-block
+}
+
+.contact_btn {
+    background-color: #75c158;
+    border: 1px solid #75c158;
+    padding: 5px 20px;
+    border-radius: 33px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact_phone {
+    width: 60%;
+    display: inline-block
+}
+
+.complaint_steps img {
+    width: 94%;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    display: block
+}
+
+.contact_phone_media {
+    max-width: 40px;
+    width: 100%;
+    float: left;
+    margin-right: 15px
+}
+
+.contact_phone_content {
+    max-width: calc(100% - 65px);
+    width: 100%;
+    float: left
+}
+
+.contact_email_content p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600
+}
+
+.contact_email_content p span {
+    display: block
+}
+
+.contact_phone_media img {
+    width: 100%
+}
+
+.contact_phone_content p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600
+}
+
+.divide_or p {
+    font-size: 22px;
+    color: #fff;
+    line-height: 33px;
+    font-weight: 700;
+    margin-left: 60px
+}
+
+.contact_phone_content p span {
+    display: block
+}
+
+.right_c_content {
+    max-width: calc(100% - 60px);
+    width: 100%;
+    float: left
+}
+
+.complaint_process {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: #ebebeb
+}
+
+.consumer_cmpl .faqsHead h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px
+}
+
+.steps_a h4 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 33px;
+    color: #000;
+    font-weight: 600
+}
+
+.contact_faqs {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: #fff
+}
+
+.sectionHeading h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.sectionHeading h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -3px;
+    border-bottom: 2px solid #f57349;
+}
+
+.complaint_process {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: #ebebeb
+}
+
+.inside_pre {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: -65px
+}
+
+.terms_head h1 {
+    font-size: 34px;
+    line-height: 51px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700
+}
+
+.updation_link p {
+    text-align: center;
+    background-color: #fff;
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 20px
+}
+
+.terms_condi_area {
+    width: 100%;
+    display: block;
+    padding: 30px 20px;
+    background-color: #e9ebee;
+    margin: 50px auto 0 auto
+}
+
+.terms_middle p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-align: justify
+}
+
+.terms_middle+p {
+    font-style: italic
+}
+
+.terms_middle h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 600
+}
+
+.terms_all_f .terms_middle ul li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: justify
+}
+
+.terms_all_f .terms_middle ul {
+    margin-left: 15px
+}
+
+.terms_all_f .terms_middle ol li {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-align: justify
+}
+
+.terms_all_f .terms_middle ol {
+    margin-left: 15px
+}
+
+.terms_nor_c p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 15px
+}
+
+.terms-list ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000
+}
+
+.terms-list ul li a:hover {
+    text-decoration: none
+}
+
+.terms-list {
+    width: 100%;
+    display: block;
+    padding: 10px 0
+}
+
+.contact_left h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600
+}
+
+.contact_left p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400
+}
+
+.contact_forms .form-control {
+    border-radius: 30px;
+    padding-left: 20px;
+    height: 48px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #000
+}
+
+.contact_forms textarea.form-control {
+    border-radius: 12px;
+    padding-left: 20px;
+    height: 137px;
+    resize: none
+}
+
+.after_borderc {
+    position: relative
+}
+
+.after_borderc::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 716px;
+    background-color: #ccc;
+}
+
+.select_bg_c {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    padding: 0 20px
+}
+
+.after-tric {
+    position: relative
+}
+
+.after-tric::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 21px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #878787;
+    right: 15px
+}
+
+.contact_forms {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 35px;
+}
+
+.contact_left {
+    padding: 0px 35px 0px 0px;
+}
+
+.greenText {
+    color: red
+}
+
+.contact_areap {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+.hide_data_new {
+    display: none
+}
+
+.contact {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0
+}
+
+.select_bg_n {
+    background-color: #6f69ac;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #6f69ac;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    padding: 0 20px
+}
+
+.after-tri {
+    position: relative !important
+}
+
+.whole_left_c {
+    width: 80%;
+    display: block;
+    margin: 0 auto
+}
+
+.servie_type_contact {
+    width: 100%;
+    display: block;
+    margin-top: 20px
+}
+
+.after-tri::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+    right: 15px
+}
+
+.after_border {
+    position: relative
+}
+
+.after_border:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 2px;
+    height: 520px;
+    background-color: #ccc
+}
+
+.phone {
+    max-width: 49%;
+    width: 100%;
+    display: block;
+    background-color: #de4a39;
+    padding: 8px 10px;
+    margin-right: 1%;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+    -moz-box-shadow: 3px 4px 0 0 #d5d4d8;
+    -webkit-box-shadow: 3px 4px 0 0 #d5d4d8;
+    box-shadow: 3px 4px 0 0 #ccc;
+    border-bottom: 4px solid #cc0e00
+}
+
+.user_email {
+    max-width: 50%;
+    width: 100%;
+    display: block;
+    background-color: #6f69ac;
+    padding: 8px 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+    -moz-box-shadow: 3px 4px 0 0 #d5d4d8;
+    -webkit-box-shadow: 3px 4px 0 0 #d5d4d8;
+    box-shadow: 3px 4px 0 0 #ccc;
+    border-bottom: 4px solid #4c4989
+}
+
+.image_contact_a img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px
+}
+
+.image_contact_a {
+    width: 100%;
+    display: inline-block;
+    margin-top: 40px
+}
+
+/**/
+
+header.gstHeader {
+    height: 75px;
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+}
+
+.sticky-side-left.stick {
+    position: fixed;
+    max-width: 360px;
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: 123px;
+}
+
+.recomeded_fix:hover {
+    background-color: #9cc244;
+}
+
+.recoznize_fix:hover {
+    background-color: #9cc244;
+}
+
+.recoznize_fix:hover .right_contentsd p {
+    color: #fff;
+}
+
+.recomeded_fix:hover .right_contentsd p {
+    color: #fff;
+}
+
+.search_icon {
+    position: relative;
+}
+
+.search_icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../../image/search.png);
+    left: 12px;
+    top: 12px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gstHeader .navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 10px 0px 10px;
+}
+
+.gstHeader .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.gstHeader .navbar-brand {
+    padding: 0px;
+    height: auto;
+    margin-top: -10px;
+}
+
+.ThreeBar {
+    width: 27px;
+    margin-right: 8px;
+    float: left;
+    cursor: pointer;
+}
+
+.steps_img {
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.clasifacation {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.clasifacation img {
+    margin-top: 15px;
+}
+
+.faq_sub_head {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.logoIcon {
+    width: calc(100% - 35px);
+    float: left;
+}
+
+.ThreeBar img {
+    width: 100%;
+    display: block;
+}
+
+.logoArea {
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.TopSliderService {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0px;
+    min-height: 101px;
+}
+
+.bgImage {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../../../image/meraprofit/header-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 406px;
+}
+
+.bgImageGstD {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../../../image/meraprofit/gst-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+}
+
+.bgImageMSeD {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../../../image/meraprofit/msme-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+}
+
+.captionService {
+    max-width: 654px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 91px;
+}
+
+.captionService h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    color: #000000;
+}
+
+.captionService h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.captionService a {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #14BE09 0%, #03710A 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 15px;
+}
+
+.headerInput input {
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding-left: 35px;
+}
+
+.headerInput .form-control:focus {
+    border-color: #fff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08), 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.headerSearch {
+    margin: 0;
+    padding: 0;
+}
+
+.inside_three h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.enqiry_video a img {
+    margin-top: 30px;
+    max-width: 263px;
+    width: 100%;
+}
+
+.gst_home .enqiry_video a img {
+    margin-top: 0px;
+}
+
+.allFaqs {
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.faqsHead h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px
+}
+
+.faqsHead p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px
+}
+
+.faqsQues h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.process_img img {
+    width: 100%;
+}
+
+.process_img {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.allFaqs ul {
+    list-style-type: none;
+}
+
+.allFaqs ul li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #9C9A9B;
+}
+
+.faqsAnsw p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400
+}
+
+.faqsQues {
+    width: 100%;
+    display: inline-block;
+    background-color: #fbf8f9;
+    padding: 10px 10px 10px 50px;
+    border-left: 3px solid #e70014;
+    position: relative
+}
+
+.faqsAnsw {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 10px 10px 50px;
+    border-left: 3px solid #9c9a9b;
+    position: relative
+}
+
+.faqsQues::after {
+    content: 'Q.';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #e70014
+}
+
+.faqsAnsw::after {
+    content: 'A.';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #9c9a9b
+}
+
+.faqsHead {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px
+}
+
+.insideFaqs {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 45px
+}
+
+.allFaqShow {
+    width: 100%;
+    display: block
+}
+
+.allFaqShow a {
+    font-size: 18px;
+    color: #f57349;
+    text-transform: none;
+    line-height: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600
+}
+
+.allFaqShow a:hover {
+    text-decoration: none
+}
+
+.inside_three p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.inside_three {
+    padding: 20px 43px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 275px;
+    border: 2px solid #75C158;
+    border-radius: 20px;
+}
+
+.inside_three img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0px auto 10px auto;
+}
+
+.clasifacation h4 {
+    font-size: 20px !important;
+}
+
+.video_area {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0px;
+    margin-top: -5px;
+}
+
+.form_area ol {
+    padding-left: 30px;
+    margin: 15px 0px;
+}
+
+.enqiry_form h2 {
+    font-size: 22px;
+    line-height: 33px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inside_three:hover {
+    background-color: #E1E1E1;
+}
+
+.enqiry_form h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 138px;
+    left: 0;
+    right: -287px;
+    text-align: center;
+    margin: 0px auto;
+    top: -80px;
+    background-image: url("../../../image/call_back12.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.enqiry_form .form-control {
+    height: 46px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+}
+
+.linksde {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #0000FF;
+    margin-top: 15px;
+    display: block;
+}
+
+.merap {
+    margin-right: 10px;
+    color: #ff7750;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.merapp {
+    margin-right: 10px;
+    color: #9c9a9b;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form_area ol li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px
+}
+
+.enqiry_form {
+    padding: 15px;
+    margin-top: 50px;
+    border: 1px solid #B6B6B6;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.abs_pos {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-right: 0;
+}
+
+.video_area_link {
+    width: 100%;
+    display: block;
+    padding: 40px 0px;
+    position: relative;
+    min-height: 356px;
+}
+
+.form_area {
+    width: 100%;
+    display: inline-block;
+}
+
+.gray_bg {
+    background-color: #f6f6f6;
+}
+
+.form_area h4 {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+}
+
+.video_area_link h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.video_area h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.form_area p,
+.video_area p,
+.video_area_link p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.types_of_msme {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0px 0px 0px;
+}
+
+.class_fic h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.types_of_msme .table-bordered {
+    border: 1px solid #fff;
+}
+
+.types_of_msme .table-bordered>tbody>tr>td,
+.types_of_msme .table-bordered>thead>tr>th {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.inside_classi p {
+    padding: 0px 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.inside_filled ul li {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    padding: 15px;
+}
+
+.under_para p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.return_filing {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0px 25px 0px;
+    background-color: #ebebff;
+    margin-top: -6px;
+}
+
+.package_heads {
+    display: block;
+    font-weight: 500;
+    position: relative;
+}
+
+.package_heads::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    left: 83px;
+    bottom: 0px;
+    border-bottom: 2px dotted;
+}
+
+.section_head h4 {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    position: relative;
+}
+
+.section_head {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.section_heads h4 {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.section_heads {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.list_plans li a {
+    border: 1px solid #919191;
+    padding: 5px 15px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #919191;
+}
+
+.list_plans li a:hover {
+    text-decoration: none;
+}
+
+.inside_filled {
+    max-width: 270px;
+    display: block;
+    margin: 0px auto;
+    padding: 15px;
+    border: 1px solid #c1baba;
+    border-radius: 5px;
+    position: relative;
+    transform: scaleY(1);
+}
+
+.second_th.inside_filled {
+    max-width: 322px;
+    width: 100%;
+    transform: scaleY(1.1);
+}
+
+.fixed_top {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 170px;
+    margin: 0px auto;
+    background-color: #756eb1;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.under_para {
+    width: 100%;
+    display: block;
+    padding: 25px 0px;
+    margin-top: 30px;
+}
+
+.money_chrge {
+    font-size: 30px;
+    font-weight: 700;
+    color: #756eb1;
+}
+
+.inside_filled ul {
+    margin-top: 40px;
+}
+
+.logoIcon a img {
+    width: 132px;
+}
+
+.second_th a.active {
+    background-color: #756eb1;
+    color: #fff;
+    border: 1px solid #756eb1;
+}
+
+.inside_slider {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 15px;
+}
+
+.slide_contents {
+    border: 1px solid #B9B9B9;
+    border-radius: 14px;
+    padding: 15px;
+}
+
+.slide_contents p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.meraprofit_home_page .slide_contents p {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.cliets_testimonial {
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+}
+
+.slider_content p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.name_desinationa {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.name_desinationa p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.name_desinationa p span {
+    display: block;
+    font-weight: 300;
+}
+
+.cliets_area {
+    width: 100%;
+    display: block;
+    padding: 20px 0px;
+    background-color: #f6f6f6;
+}
+
+.newBtns {
+    background-color: #9cc244;
+    border: 1px solid #9cc244;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    background: linear-gradient(180deg, #ADCE59 0%, #8AB62E 100%);
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.recomeded_fix {
+    max-width: 240px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 210px;
+    transform: rotate(-90deg);
+    left: -90px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 0px 6px #ccc;
+}
+
+.recoznize_fix {
+    max-width: 240px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 210px;
+    transform: rotate(-90deg);
+    right: -90px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 1px 0px 6px #ccc;
+}
+
+.left_media {
+    width: 40px;
+    float: left;
+}
+
+.right_contentsd {
+    width: calc(100% - 40px);
+    float: left;
+}
+
+.left_media img {
+    transform: rotate(90deg);
+    width: 35px;
+    margin-top: 10px;
+}
+
+.right_contentsd p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #D12F58;
+}
+
+.right_contentsd p span {
+    display: block;
+    color: #D12F58;
+}
+
+.searcText.form-control::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-size: 18px;
+}
+
+.tracks_area {
+    padding: 40px 0px;
+    width: 100%;
+    display: block;
+    background-image: url(../../../image/meraprofit/featured-services-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 406px;
+}
+
+.client_logo.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.videoPlayerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-property: all;
+    -moz-transition-property: all;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    -ms-transition-property: all;
+    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -ms-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -ms-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+}
+
+.videoPlayerOverlay .closeIcon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 3rem;
+    z-index: 200;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    transition-property: transform;
+    -moz-transition-property: transform;
+    -webkit-transition-property: transform;
+    -o-transition-property: transform;
+    -ms-transition-property: transform;
+    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    -ms-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+.videoPlayerOverlay iframe {
+    max-width: 853px;
+    max-height: 480px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.videoPlayerOverlay.hiddenTransform {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+}
+
+.closeIcon>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media only screen and (min-width:1200px) {
+    .videoPlayerOverlay .closeIcon:hover {
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.5);
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.circle_area {
+    width: 146px;
+    height: 146px;
+    float: left;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 54px;
+    margin-top: 35px;
+}
+
+.circle_bg_1 {
+    background: linear-gradient(134.99deg, #006EB3 14.64%, #24B9FF 85.36%);
+}
+
+.circle_bg_2 {
+    background: linear-gradient(90deg, #00B56C 0%, #38FFA2 100.01%);
+}
+
+.circle_bg_3 {
+    background: linear-gradient(166.72deg, #FFB030 8.42%, #FFDD64 91.55%);
+}
+
+.circle_bg_4 {
+    background: linear-gradient(134.99deg, #006EB3 14.65%, #24B9FF 12589.13%);
+}
+
+.inside_circle {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    bottom: 0px;
+    margin: 0px auto;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.inside_circle h3 {
+    text-align: center;
+    line-height: 114px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+}
+
+.progrss_content {
+    max-width: 391px;
+    min-height: 195px;
+    float: left;
+    background-color: #f8f8f8;
+    border-radius: 50px;
+    position: relative;
+    padding: 45px 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress_block {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.progrss_content::before {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid #f8f8f8;
+    content: "";
+    display: block;
+    position: absolute;
+    left: -40px;
+    top: 73px;
+}
+
+.progrss_content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.progrss_content p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.block_progress {
+    position: relative;
+}
+
+.block_progress:before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 1094px;
+    background-color: #f8f8f8;
+    position: absolute;
+    left: 70px;
+    top: 0px;
+}
+
+.blogs_area {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.inside_blogs img {
+    width: 100%;
+}
+
+.blogs_content {
+    padding: 10px 15px;
+}
+
+.inside_blogs {
+    background: #FFFFFF;
+    border: 1px solid #BEBEBE;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.blogs_content a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4AA951;
+    display: block;
+    margin-top: 5px;
+}
+
+.blogs_content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #959595;
+}
+
+.blogs_content h5 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.heads_tops h4 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.blogs_top_head {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.blogs_area {
+    width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px 0px;
+}
+
+.client_logo.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: 0px auto;
+}
+
+.faqsAnsw p {
+    color: #9C9A9B;
+}
+
+.left_hamb {
+    width: 34px;
+    float: left;
+    margin-right: 18px;
+}
+
+.logo_with_ham {
+    width: calc(100% - 52px);
+    float: left;
+}
+
+.left_hamb a img {
+    width: 33px;
+    margin-top: 10px;
+}
+
+.logo_main {
+    width: 100%;
+    margin-top: 21px;
+    display: inline-block;
+}
+
+.inside_classi h3 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 37px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.inside_classi ol li {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.inside_classi {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.top_clasi {
+    width: 100%;
+    display: inline-block;
+    background-image: url(../../../image/full-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 267px;
+    margin-top: 30px;
+}
+
+.inside_classi ol {
+    padding-left: 75px;
+}
+
+.inside_classi {
+    padding-left: 40px;
+}
+
+.steps_inside h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.steps_inside p {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.steps_inside::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 28px;
+    background-color: #ea5f42;
+    position: absolute;
+    left: -95px;
+    top: 0;
+}
+
+.steps_inside {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.registration-steps::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 100%;
+    background-color: #ea5f42;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.registration-steps {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-left: 95px;
+    margin-top: 30px;
+}
+
+.fix_header {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0px;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 86px;
+}
+
+.left_hamber {
+    width: 30px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 17px;
+}
+
+.siteLogo {
+    width: calc(100% - 45px);
+    float: left;
+}
+
+.online_register {
+    width: 100%;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.bgImageMera {
+    width: 100%;
+    display: inline-block;
+    min-height: 553px;
+    margin-top: 0px;
+    background-image: url(../../../image/meraprofit/meraprofit-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dsc_home_page .enqiry_form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.dsc_home_page .captionService h1 {
+    color: #fff;
+}
+
+.dsc_home_page .captionService h2 {
+    color: #fff;
+}
+
+.enquiry_dsc {
+    max-width: 370px;
+    width: 100%;
+    float: right;
+}
+
+.dsc_home_page .captionService {
+    max-width: 654px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 105px;
+    left: 91px;
+}
+
+.inside_dsc_i p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.inside_dsc_i img {
+    display: block;
+    margin: 0px auto;
+    margin-top: 35px;
+}
+
+.enquiry_dsc .enqiry_form .form-group {
+    margin-bottom: 15px;
+}
+
+.enquiry_dsc .enqiry_form .form-control {
+    height: 34px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+}
+
+.clients_caption p {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.dsc_home_page .enqiry_form h2::after {
+    display: none;
+}
+
+.bgImageDscH {
+    width: 100%;
+    display: inline-block;
+    min-height: 360px;
+    margin-top: 0px;
+    background-image: url(../../../image/meraprofit/dsc_bg_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.TopSliderServiceMera {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0px;
+    min-height: 101px;
+}
+
+.captionServiceMera {
+    max-width: 720px;
+    width: 100%;
+    float: left;
+    margin-right: 46px;
+    margin-top: 54px;
+}
+
+.enquiry_mera {
+    max-width: 324px;
+    width: 100%;
+    float: right;
+}
+
+.captionServiceMera h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.enquiry_mera .form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.enqiry_form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.services_individual {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 25px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.services_individual h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #303030;
+}
+
+.services_individual img {
+    display: block;
+    margin: 0px auto;
+    height: 54px;
+    width: 54px;
+    margin-bottom: 10px;
+}
+
+.meraprofit_home_page .enqiry_form {
+    padding: 0px;
+    margin-top: 70px;
+    border: 1px solid #B6B6B6;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.meraprofit_home_page .enqiry_form h2 {
+    font-size: 22px;
+    line-height: 33px;
+    position: relative;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.meraprofit_home_page form {
+    padding: 10px 15px 20px 15px;
+}
+
+.one_brd {
+    border-bottom: 9px solid #2FDF84;
+}
+
+.two_brd {
+    border-bottom: 9px solid #C4433D;
+}
+
+.three_brd {
+    border-bottom: 9px solid #A7B524;
+}
+
+.four_brd {
+    border-bottom: 9px solid #0099C7;
+}
+
+.five_brd {
+    border-bottom: 9px solid #512FFC;
+}
+
+.six_brd {
+    border-bottom: 9px solid #5E9C66;
+}
+
+.seven_brd {
+    border-bottom: 9px solid #009688;
+}
+
+.eight_brd {
+    border-bottom: 9px solid #F6E080;
+}
+
+.meraprofit_tab {
+    width: 100%;
+    display: inline-block
+}
+
+.meraprofit_tab .nav-tabs>li>a {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding: 15px 0px;
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #292929;
+}
+
+.meraprofit_tab .nav>li>a:focus,
+.meraprofit_tab .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent
+}
+
+.meraprofit_tab .nav-tabs>li.active>a,
+.meraprofit_tab .nav-tabs>li.active>a:focus,
+.meraprofit_tab .nav-tabs>li.active>a:hover {
+    cursor: default;
+    background-color: transparent;
+    border: 0px solid #0ebdf5;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #3AA86A;
+    display: inline-block;
+    border-bottom: 3px solid #3AA86A;
+}
+
+.meraprofit_tab .nav-tabs {
+    border-bottom: 0px solid #3AA86A;
+    border-top: 0px solid #dedede;
+    padding: 0px;
+    margin: 0px auto;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.meraprofit_tab .nav-tabs li {
+    display: block;
+    float: left;
+    text-align: left;
+    margin-right: 113px;
+}
+
+.meraprofit_tab p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-align: justify
+}
+
+.inside_mertab a {
+    background: #00C079;
+    border-radius: 19px;
+    display: block;
+    padding: 5px 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
+.inside_mertab a:hover {
+    background: #FF7750;
+}
+
+.meraprofit_tab .tab-content>.tab-pane {
+    padding: 10px 0
+}
+
+.inside_mertab {
+    border: 2px solid #00C079;
+    border-radius: 30px;
+    padding: 21px;
+    position: relative;
+}
+
+.inside_mertab p {
+    min-height: 264px;
+}
+
+.inside_mertab h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.inside_mertab p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.inside_mertab h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.featured_services {
+    padding: 50px 0px;
+    width: 100%;
+    display: block;
+    background-image: url(../../../image/meraprofit/featured-services-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.featured_services::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: #04c17b;
+    width: 100%;
+    height: 1px;
+    top: 163px;
+}
+
+.inside_mertab h4 span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+}
+
+.custom_mera_head h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+}
+
+.custom_mera_head {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.meraprofit_about {
+    width: 100%;
+    display: inline-block;
+    padding: 50px 0px;
+    background: #F6F6F6;
+}
+
+.mera_about_inside p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.why_meraprofit {
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    padding: 50px 0px;
+}
+
+.why_meraprofit_top p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.why_mera_in h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #485054;
+}
+
+.why_mera_in img {
+    display: block;
+    margin: 0px auto;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 10px
+}
+
+.why_meraprofit_top {
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+}
+
+.why_mera_in p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #898989;
+}
+
+.services_individual::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    width: 63px;
+    height: 98px;
+    background-image: url("../../../image/meraprofit/service-arrow.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.custom_mera_head h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -5px;
+    border-bottom: 3px solid #FF7750;
+}
+
+.why_mera_in:hover {
+    border-top: 10px solid #EA9D2D;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.why_mera_in {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 15px auto 15px auto;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    min-height: 226px;
+}
+
+.mera_testimonial {
+    width: 100%;
+    display: block;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #75C158 100%);
+    padding: 50px 0px;
+}
+
+/**/
+
+.all-inside-faq .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.all-inside-faq .collapse.in {
+    display: block;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+.all-inside-faq .panel-default>.panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #E5E5E5;
+    border-color: #E5E5E5;
+    background-image: none;
+    margin-bottom: 0px;
+}
+
+.all-inside-faq .panel-title {
+    font-size: 14px;
+    position: relative;
+}
+
+.all-inside-faq .icon_size_n img {
+    width: 20px;
+    height: 20px;
+}
+
+.all-inside-faq .panel-title>a {
+    padding: 8px 45px 8px 15px;
+    text-decoration: none;
+    border: 1px solid #CFCFCF;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.all-inside-faq .more-less {
+    float: right;
+    color: #e86243;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.all-inside-faq .inside_pane p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    padding-left: 6px;
+}
+
+.all-inside-faq .inside_pane {
+    width: 100%;
+    display: inline-block;
+}
+
+.all-inside-faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    margin-top: 0px;
+    background: #E8F1FD;
+    border: 1px solid #CFCFCF;
+    border-radius: 0px;
+}
+
+.all-inside-faq .panel-body {
+    padding: 15px 10px;
+}
+
+.all-inside-faq .panel {
+    background-color: transparent;
+}
+
+.faqs_qa {
+    width: 100%;
+    display: inline-block;
+    padding: 25px 15px;
+    background-color: #fff;
+}
+
+.faq_minus {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-image: url('../../../image/meraprofit/faqs-down.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.faq_plus {
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-image: url('../../../image/meraprofit/faqs-up.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.right_test_content {
+    width: calc(100% - 80px);
+    float: left;
+}
+
+.bootom_testimonial {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.left_test_media {
+    width: 60px;
+    float: left;
+    margin-right: 20px;
+}
+
+.right_test_content h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.right_test_content h3 span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000000;
+    display: block;
+}
+
+.meraprofit_home_page .inside_slider {
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+}
+
+.meraprofit_home_page .enqiry_form h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 138px;
+    left: 0;
+    right: -352px;
+    text-align: center;
+    margin: 0px auto;
+    top: -69px;
+    background-image: url("../../../image/meraprofit/call-big.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.meraprofit_home_page .cliets_area {
+    width: 100%;
+    display: block;
+    padding: 15px 0px;
+    background-color: #E4E4E4;
+}
+
+.meraprofit_home_page .clients_testimonial.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+    margin: 5px 7px;
+    background: #FFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    border: 1px solid #00C079;
+}
+
+.meraprofit_home_page .clients_testimonial.owl-theme .owl-dots .owl-dot.active span,
+.meraprofit_home_page .clients_testimonial.owl-theme .owl-dots .owl-dot:hover span {
+    background: transparent;
+    border: 1px solid #00C079;
+}
+
+.left_blogs {
+    max-width: 830px;
+    width: 100%;
+    float: left;
+    margin-right: 9px;
+}
+
+.right_sec_blog {
+    max-width: 300px;
+    float: left;
+    width: 100%;
+    background-color: #F5F6F8;
+}
+
+.mera_blog {
+    width: 100%;
+    display: block;
+    padding: 50px 0px;
+    background-image: url(../../../image/meraprofit/latest-blogs-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right_contents {
+    max-width: 504px;
+    float: left;
+    width: 100%;
+    padding: 32px 28px;
+    background-color: #F5F6F8;
+}
+
+.right_contents h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.right_contents p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.left_media_mblogs {
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.bottom_blogs {
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.right_sec_blog h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+    padding: 21px;
+}
+
+.right_sec_blog h3 span {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.right_contents_mblogs p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.right_contents_mblogs p span {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.left_media_mblogs img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+}
+
+.left_img {
+    width: 326px;
+    float: left;
+}
+
+.left_img img {
+    width: 100%;
+}
+
+.bottom_first_b {
+    width: 374px;
+    float: left;
+    margin-right: 9px;
+    background-color: #F5F6F8;
+}
+
+.bottom_sec_b {
+    width: 374px;
+    float: left;
+    margin-right: 9px;
+    background-color: #F5F6F8;
+}
+
+.bottom_third_b {
+    width: 374px;
+    float: left;
+    background-color: #F5F6F8;
+}
+
+.bottom_first_b h3,
+.bottom_sec_b h3,
+.bottom_third_b h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
+    padding: 15px;
+}
+
+.bottom_first_b img,
+.bottom_sec_b img,
+.bottom_third_b img {
+    width: 100%;
+}
+
+.faqs_qa .panel-group .panel+.panel {
+    margin-top: 0;
+}
+
+.top_mblogs {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.bottom_first_b h3 span,
+.bottom_sec_b h3 span,
+.bottom_third_b h3 span {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.meraprofit_home_page .slide_contents {
+    position: relative;
+}
+
+.meraprofit_home_page .slide_contents::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 34px;
+    top: 30px;
+    background-image: url("../../../image/meraprofit/left-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.test_a_link {
+    display: block;
+    position: relative;
+}
+
+.test_a_link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -32px;
+    bottom: 24px;
+    width: 43px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.pvt-companny-bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -13px;
+    top: -15px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #04c17b;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-image: url("../../../image/meraprofit/pvt-ltd-g.svg");
+}
+
+.opc-companny-bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -13px;
+    top: -15px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #04c17b;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-image: url("../../../image/meraprofit/opcg.svg");
+}
+
+.llp-registration-bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -13px;
+    top: -15px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #04c17b;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-image: url("../../../image/meraprofit/llpg.svg");
+}
+
+.meraprofit_home_page .clients_testimonial .owl-nav button.owl-prev {
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: -110px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 0px solid #000;
+    color: transparent;
+}
+
+.meraprofit_home_page .clients_testimonial .owl-nav button.owl-prev::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 11px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.meraprofit_home_page .clients_testimonial.owl-theme .owl-nav {
+    margin-top: 44px;
+}
+
+.meraprofit_home_page .clients_testimonial .owl-nav button.owl-next {
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    right: -90px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 0px solid #000;
+    color: transparent;
+}
+
+.meraprofit_home_page .clients_testimonial .owl-nav button.owl-next::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.whatsapp_support,
+.customer_support,
+.facebook_support {
+    width: 178px;
+    float: left;
+    margin-right: 51px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.whatsapp_support a,
+.customer_support a,
+.facebook_support a {
+    display: block;
+    padding: 10px 10px 5px 10px;
+    width: 100%;
+    height: 58px;
+}
+
+.left_whatsapp {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.left_whatsapp img {
+    width: 100%;
+}
+
+.right_whatsapp {
+    width: calc(100% - 60px);
+    float: left;
+}
+
+.right_whatsapp p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.customer_left {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.customer_left img {
+    width: 100%;
+}
+
+.customer_right {
+    width: calc(100% - 60px);
+    float: left;
+}
+
+.customer_right p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.left_facebook {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.left_facebook img {
+    width: 100%;
+}
+
+.right_facebook {
+    width: calc(100% - 60px);
+    float: left;
+}
+
+.right_facebook p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.social_support {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.padd_footer {
+    padding: 0px !important;
+}
+
+.meraprofit_home_page .slide_contents {
+    padding: 118px 34px 45px 34px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: block;
+    margin: 10px;
+    max-width: 356px;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none
+}
+
+.test_gap {
+    height: 110px;
+    background-color: #f6f6f6;
+    display: block;
+    margin-top: -6px;
+    width: 100%;
+}
+
+.left_fixable ul li.active {
+    background: #fff;
+}
+
+.video_area_new h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.video_area_new p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.in_certificate_process img {
+    display: block;
+    margin: 0px auto 10px auto;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.three_scroll {
+    width: 100%;
+    display: inline-block;
+    padding: 25px 40px;
+    background-color: #f6f6f6;
+}
+
+.video_area_new {
+    width: 100%;
+    display: inline-block;
+}
+
+.one_sc {
+    height: 735px;
+}
+
+.in_certificate_process h3 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.img_process::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -94px;
+    top: 10px;
+    width: 183px;
+    background-image: url(../../../image/meraprofit/arrow-right.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+}
+
+.in_certificate_process {
+    position: relative;
+}
+
+.cert_process {
+    width: 100%;
+    display: inline-block;
+    padding: 40px 0px 15px 0px;
+}
+
+.details_inner_page .enqiry_form.top_frm {
+    padding: 15px;
+    border: 1px solid #B6B6B6;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+
+.details_inner_page .progrss_content {
+    background-color: #fff;
+}
+
+.left_fixable ul li a {
+    font-size: 16px;
+    padding: 19px;
+    display: block;
+    font-weight: 700;
+    transition: all .2s;
+    color: #000;
+}
+
+.left_one_scroll {
+    max-width: 265px;
+    width: 100%;
+    float: left;
+    margin-right: 35px;
+}
+
+.middle_one_scroll {
+    max-width: 620px;
+    width: 100%;
+    float: left;
+    margin-right: 35px;
+}
+
+.right_one_scroll {
+    max-width: 300px;
+    width: 100%;
+    float: left;
+}
+
+.left_fixable ul li {
+    list-style: none;
+    background: #e8e8e8;
+    border-radius: 3px;
+    margin: 4px;
+    transition: .2s ease-in-out;
+}
+
+.details_inner_page .progrss_content::before {
+    border-right: 40px solid #fff;
+}
+
+.captionServiceInner {
+    max-width: 654px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 152px;
+    left: 0px;
+}
+
+.captionServiceInner h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    color: #000000;
+}
+
+.captionServiceInner h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.captionServiceInner h2 span {
+    display: block;
+    color: #ff7750;
+}
+
+.captionServiceInner p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.captionServiceInner p span {
+    color: #75c158;
+}
+
+.captionServiceInner a {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #14BE09 0%, #03710A 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 25px;
+}
+
+.fancy_slider .inside_slider {
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
+}
+
+.fancy_slider .slide_contents p {
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.fancy_slider .cliets_area {
+    width: 100%;
+    display: block;
+    padding: 15px 0px;
+    background-color: #E4E4E4;
+}
+
+.fancy_slider .clients_testimonial.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+    margin: 5px 7px;
+    background: #FFF;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    border: 1px solid #00C079;
+}
+
+.fancy_slider .clients_testimonial.owl-theme .owl-dots .owl-dot.active span,
+.fancy_slider .clients_testimonial.owl-theme .owl-dots .owl-dot:hover span {
+    background: transparent;
+    border: 1px solid #00C079;
+}
+
+.fancy_slider .slide_contents {
+    position: relative;
+}
+
+.fancy_slider .slide_contents::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 34px;
+    top: 30px;
+    background-image: url("../../../image/meraprofit/left-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fancy_slider .clients_testimonial .owl-nav button.owl-prev::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 11px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.fancy_slider .clients_testimonial.owl-theme .owl-nav {
+    margin-top: 44px;
+}
+
+.fancy_slider .clients_testimonial .owl-nav button.owl-next {
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    right: -90px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 0px solid #000;
+    color: transparent;
+}
+
+.fancy_slider .clients_testimonial .owl-nav button.owl-prev {
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    left: -110px;
+    opacity: 1;
+    border-radius: 50%;
+    border: 0px solid #000;
+    color: transparent;
+}
+
+.fancy_slider .clients_testimonial .owl-nav button.owl-next::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 8px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.fancy_slider .slide_contents {
+    padding: 118px 34px 45px 34px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: block;
+    margin: 10px;
+    max-width: 356px;
+    min-height: 430px;
+}
+
+body:not(.modal-open) {
+    padding-right: 0px !important;
+}
+
+.circle_bg_5 {
+    background: linear-gradient(90deg, #75C158 0%, #9CC345 100.01%);
+}
+
+.document_inside {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 55px;
+    background-color: #f6f6f6;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #75c158;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.error {
+    color: red;
+    position: absolute;
+    bottom: -21px;
+    z-index: 999;
+    font-size: 12px;
+}
+
+#ConsumerComplaintForm .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.circle_width {
+    width: 125px;
+    height: 125px;
+    display: block;
+    margin: 15px auto;
+}
+
+.list_inners_p ol li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    padding-left: 6px;
+}
+
+.list_inners_p {
+    width: 100%;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.terms_all_f ol li {
+    text-transform: lowercase;
+}
+
+.gst_banner_txt .captionService h1,
+.gst_banner_txt .captionService h2 {
+    color: #fff;
+}
+
+.msme_banner_txt .captionService h1,
+.msme_banner_txt .captionService h2 {
+    color: #fff;
+}
+
+.msme_banner_txt .TopSliderService,
+.gst_banner_txt .TopSliderService {
+    margin-top: 0px;
+    background-color: #fff;
+}
+
+.bg-fb {
+    width: 20px;
+    height: 20px;
+    background: url(../../../image/css_sprites.png) -10px -10px;
+    display: block
+}
+
+.bg-insta {
+    width: 20px;
+    height: 20px;
+    background: url(../../../image/css_sprites.png) -50px -10px;
+    display: block
+}
+
+.bg-linkedin {
+    width: 20px;
+    height: 20px;
+    background: url(../../../image/css_sprites.png) -10px -50px;
+    display: block
+}
+
+.details_inner_page .captionServiceInner h1,
+.details_inner_page .captionServiceInner h2,
+.details_inner_page .captionServiceInner p {
+    color: #fff;
+}
+
+.details_inner_page .top_frm {
+    background-color: #fff;
+}
+
+/*.bgImageMeraDetails{width:100%;display:inline-block;min-height:553px;margin-top:-86px;background-image:url(../../../image/meraprofit/ipr-bg.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;}*/
+
+#Tax .inside_mertab p {
+    min-height: 336px;
+}
+
+#IPR .inside_mertab p {
+    min-height: 336px;
+}
+
+.without_box {
+    display: block;
+    width: 960px;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 0px auto;
+}
+
+.faq_page_b .faqs_section .rb_custom,
+.faq_page_b .documents_required_section .rb_custom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq_page_b .rb_custom,
+.document_required_b .rb_custom,
+.gst_track_page_b .rb_custom,
+.gst_modification_page_b .rb_custom {
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: none;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+body.faq_page_b,
+body.document_required_b,
+body.gst_track_page_b,
+body.gst_modification_page_b,
+body.lost_msme_b {
+    background-color: #fff;
+}
+
+.new_liste li {
+    margin-bottom: 7px;
+    margin-left: 24px;
+    margin-top: 6px;
+}
+
+.gst_track_page_b .passport_track_status_sec .search_wrap,
+.lost_msme_b .passport_track_status_sec .search_wrap {
+    min-height: 320px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+@media (max-width:767px) {
+    section.payment_success_sec.landing_passport_sec {
+        box-shadow: 2px 1px 6px 1px #aeaeae;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        margin: 10px auto;
+        width: 100%;
+        display: inline-block;
+    }
+}

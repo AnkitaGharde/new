@@ -1,0 +1,146 @@
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+ <hr>
+    <div class="text-center">
+
+
+        <h4><b>Fresh GST Application Form | Taxpayer</b></h4>
+
+        <h4 style="color:brown;"><b>Partnership Registration</b></h4>
+
+
+</div>
+<div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+    </div>
+<div>
+      <div>
+    <form method="POST">
+        {%csrf_token%}
+
+        <div class="form-row">
+
+          <div class="col-sm-12">
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:blue;"><b>Type of Business For GSTIN</b></h4></label>
+              <input type="text" class="form-control" name="Firstname" placeholder="Proprietor/Single Owner" autocomplete="false">
+              </div>
+          </div>
+
+
+              <div class="col-sm-12">
+              <h4 style="color:blue;"><b>Business Details</b></h4>
+
+               <div class="col-sm-3">
+                   <label for="Name"><h5 style="color:black;"><b>Name Of Firms<b style="color:red;">*</b></b></h5></label>
+                  <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+              </div>
+
+                  <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>Trade Name of Business<b style="color:red;">*</b></b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                  </div>
+
+                   <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>Date of Formation<b style="color:red;">*</b></b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                   </div>
+              </div>
+            <br>
+
+            <div class="col-sm-12">
+
+            <h4 style="color:blue;"><b>Business Address Details </b></h4>
+
+            <div class="col-sm-3">
+            <label for="Name"><h5 style="color:black;"><b>Address<b style="color:red;">*</b></b></h5></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h5 style="color:black;"><b>Pin Code<b style="color:red;">*</b></b></h5></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                </div>
+
+              <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>State/UT<b style="color:red;">*</b></b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+              </div>
+
+                <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>District</b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                </div>
+
+            </div>
+
+            <div class="col-sm-12">
+                <h4 style="color:blue;"><b>Contact Details</b></h4>
+                <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>Mobile number<b style="color:red;">*</b></b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                </div>
+
+
+                <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>E-mail Id</b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                </div>
+
+            </div>
+                <div class="col-sm-12">
+                    <h4 style="color:blue;"><b>Partner Details</b></h4>
+                    <div class="col-sm-3">
+                <label for="Name"><h5 style="color:black;"><b>No. of Partner<b style="color:red;">*</b></b></h5></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                    </div>
+                </div>
+<br>
+                <div>
+                    <hr>
+<br>
+                                I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
+                </div>
+                <div>
+                    <br>
+                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
+                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                                <b>
+                                  <u>I Agree ALL Terms And Conditions</u>
+                                </b>
+                              </a>
+
+<div class="text-center">
+
+    <br>
+                          <button class="btn btn-warning" type="submit">Continue & Pay</button>
+</div>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+                </div>
+
+            </div>
+
+
+
+      </form>
+          <br>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+{% endblock content %}

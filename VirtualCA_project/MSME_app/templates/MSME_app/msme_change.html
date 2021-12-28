@@ -1,0 +1,173 @@
+
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+ <hr>
+    <div class="text-center">
+
+
+        <h2><b>MSME Modification Application Form | Taxpayer</b></h2>
+
+        <h3 style="color:brown;"><b>MSME Modification</b></h3>
+
+
+</div>
+<div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+    </div>
+<div>
+      <div>
+    <form method="POST">
+        {%csrf_token%}
+        <div class="col-md-12 ">
+            <div class="form-row">
+
+          <div class="col-sm-12">
+  <h3 style="color:blue;"><b>Business Details </b></h3>
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> Select Type of Business For GSTIN<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> Name Of Application<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> Name Of Enterprise<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> Mobile Number<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname" autocomplete="false">
+          </div>
+          </div>
+
+
+            <div class="col-sm-12">
+                <br>
+
+            <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>E-mail Id<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>State/UT<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>MSME/UAM No.</b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+
+            <div class="col-sm-12">
+                <br>
+                <h3 style="color:blue;"><b>Modification / Changes Required</b></h3>
+
+
+        <div class="row">
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Change in the Name Of Enterprise">
+                                  <label for="change"> Change in the Name Of Enterprise</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Change / Addition in Business Activities">
+                                  <label for="change"> Change / Addition in Business Activities</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Change in Mobile Number / Email ID">
+                                  <label for="change">Change in Mobile Number / Email ID</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Change in Bank Account Details">
+                                  <label for="change">Change in Bank Account Details</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Linking of GSTIN with MSME/Udyan">
+                                  <label for="change">Linking of GSTIN with MSME/Udyan</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Changes Addition of Address">
+                                  <label for="change">Changes Addition of Address</label>
+                                </div>
+                                <div class="part1 partc col-md-6 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" value="Change in Major Activity of Unit-Manufacturer/Services">
+                                  <label for="change">Change in Major Activity of Unit-Manufacturer/Services</label>
+                                </div>
+                                <div class="part1 partc col-md-1 col-sm-12">
+                                  <input type="checkbox" name="change_msme[]" id="other_value" value="other">
+                                  <label for="change">Other</label>
+                                </div>
+                                <div class="part3 partc col-md-3 col-sm-12" style="display:none" id="other">
+                                  <div class="r1data">
+                                    <input type="text" name="other_modification" id="other_modification" placeholder="Mention changes Required in your certificate" value="">
+                                    <div id="plc_error_plc_cont_email" class="clearfix form_rules">
+                                      <span class="other_modification_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+<br>
+                <div>
+                    <hr>
+<br>
+                                I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
+                </div>
+                <div>
+                    <br>
+                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
+                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                                <b>
+                                  <u>I Agree ALL Terms And Conditions</u>
+                                </b>
+                              </a>
+
+<div class="text-center">
+
+    <br>
+                          <button class="btn btn-primary" type="submit">Continue</button>
+</div>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+                </div>
+
+            </div>
+
+
+
+      </form>
+          <br>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+{% endblock content %}

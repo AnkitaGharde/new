@@ -1,0 +1,147 @@
+
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="text-center">
+
+    <h2><b>GST Modification Application Form | Taxpayer</b></h2>
+
+    <h3 style="color:brown;"><b>GST Modification</b></h3>
+</div>
+<div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+</div>
+<div>
+      <div>
+    <form method="POST">
+        {%csrf_token%}
+        <div class="col-md-12 ">
+            <div class="form-row">
+
+          <div class="col-sm-12">
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:blue;"><b> Select Type of Business For GSTIN</b></h4></label>
+            <input type="text" class="form-control" name="Firstname" placeholder="Proprietor/Single Owner" autocomplete="false">
+          </div>
+              <br>
+          </div>
+                    <br>
+
+            <div class="col-sm-12">
+                <br>
+                <h4 style="color:blue;"><b>General Details </b></h4>
+            <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>Trade Name of Business<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>GSTI(Optional)<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>GSTI(Optional)<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>GSTI(Optional)<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+            </div>
+
+            <div class="col-sm-12">
+                <br>
+                <h4 style="color:blue;"><b>Other Details</b></h4>
+
+                <div class="col-sm-6">
+                <label for="Name"><h4 style="color:black;"><b>GSTIN(Optional)</b></h4></label>
+                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+                </div>
+
+            </div>
+                <div class="col-sm-12">
+                <h5 style="color:brown;"><b>What Modification you want ?(Optional)</b></h5>
+                    <div>
+                        <div class="part3 partc col-sm-5">
+                              <div class="r1head ">What Modification you want ? (Optional)</div>
+                              <div class="r1datamod ">
+                                <input type="checkbox" name="modoption[]" id="mod_tradename" value="mod_tradename">
+                                <label> Change in Legal / Trade Name of Business</label>
+                                <br>
+                                <input type="checkbox" name="modoption[]" id="mod_business_addr" value="mod_business_addr">
+                                <label> Change in Business Address</label>
+                                <br>
+                                <input type="checkbox" name="modoption[]" id="mod_new_business_addr" value="mod_new_business_addr">
+                                <label> Addition of New Business Address</label>
+                                <br>
+                                <input type="checkbox" name="modoption[]" id="mod_partner_director" value="mod_partner_director" disabled="disabled">
+                                <label> Change in Partners or Directors</label>
+                                <br>
+                                <input type="checkbox" name="modoption[]" id="mod_name_dob" value="mod_name_dob">
+                                <label> Change in Name / Date of Birth based on Correction in PAN Database</label>
+                                <br>
+                                <input type="checkbox" name="modoption[]" id="mod_mob_email" value="mod_mob_email">
+                                <label> Change in Mobile Number / E-mail address</label>
+                                <br>
+                                <div id="modification_error_modoption_modification" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+
+                  <br>
+                <div>
+                    <hr>
+               <br>
+                      I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
+                </div>
+                <div>
+                    <br>
+                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
+                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                                <b>
+                                  <u>I Agree ALL Terms And Conditions</u>
+                                </b>
+                              </a>
+
+                    <div class="text-center">
+
+                   <br>
+                          <button class="btn btn-primary" type="submit">Continue</button>
+                    </div>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+                </div>
+
+            </div>
+
+
+
+      </form>
+          <br>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+{% endblock content %}

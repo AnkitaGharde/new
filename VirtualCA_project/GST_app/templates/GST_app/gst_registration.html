@@ -1,0 +1,101 @@
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+ <hr>
+    <div class="text-center">
+
+
+        <h2><b>GST Registration Application Form | Taxpayer</b></h2>
+
+        <h3 style="color:brown;"><b>GST Registration</b></h3>
+
+
+</div>
+<div>
+   <hr style="height:2px;border-width:0;color:pink;background-color:black">
+
+
+    </div>
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px; border-radius:15px;text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>Priprietorship/Single Owner</b></h1>
+
+    <a href="{% url 'proprietorship' %}"><h3 style="color:green">Click here</h3></a>
+    </div>
+</div>
+
+
+
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px; border-radius:15px; text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>Partnership Registration</b></h1>
+
+    <a href="{% url 'partnership' %}"><h3 style="color:green">Click here</h3></a>
+    </div>
+</div>
+
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px;border-radius:15px;text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>One Person Company</b></h1>
+
+    <a href="{% url 'one_person' %}"><h3 style="color:green">Click here</h3></a>
+    </div>
+</div>
+
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px;border-radius:15px;text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>Limited Liability Partnership</b></h1>
+   <a href="{% url 'ltd_liability' %}"><h3 style="color:green">Click here</h3></a>
+
+    </div>
+</div>
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px;border-radius:15px;text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>Private Liability Company</b></h1>
+
+          <a href="{% url 'private' %}"><h3 style="color:green">Click here</h3></a>
+    </div>
+</div>
+
+
+<div class="col-sm-4">
+<div class="container-gst"
+        style="background-color: pink;width:300px;border-radius:15px;text-align:center;">
+
+    <h1 style="font-size: 30px; color:blue;"><b>Public Limited Company</b></h1>
+
+    <a href="{% url 'public' %}"><h3 style="color:green">click here</h3></a>
+    </div>
+</div>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+</div>
+
+
+
+{% endblock content %}
+
+

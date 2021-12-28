@@ -1,0 +1,29 @@
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="enquiry-sec">
+        <div class="container">
+            <h2>Income TAx Filing<span>Process</span></h2>
+        </div>
+  <hr>
+    <div class="col-sm-6">
+
+ <h3><b>Income Tax Filing</b></h3>
+
+<p>CA Office can help you with income tax return filing.</p>
+    <ol>
+        <li>Document Collection</li>
+        <li>Return Prepartion</li>
+        <li>Return Filing</li>
+    </ol>
+
+    </div>
+<div class="text-right" col-sm-6>
+    <img src="{% static 'CA_app/images/income-fil.jpg'%}" height="400px" width="500px">
+
+</div>
+
+
+{% endblock content %}

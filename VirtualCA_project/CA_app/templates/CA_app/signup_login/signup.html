@@ -1,0 +1,41 @@
+{% extends 'CA_app/Basecode/base.html' %} {% block content %} {% load static %} <h1 class="text-center text-primary">
+  <u>
+    <b>SignUp here</b>
+  </u>
+</h1>
+<form method="POST">
+  {%csrf_token%}
+  <div class="col-md-12 col-sm-12 col-xs-12 nopadding ">
+       <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+    <div class="container">
+      <div class="form-row">
+        <div class="form-group col-md-8">
+          <label for="Name">First Name</label>
+          <input type="text" class="form-control" name="Firstname" placeholder="First Name" autocomplete="false">
+        </div>
+        <div class="form-group col-md-8">
+          <label for="Name">Last Name</label>
+          <input type="text" class="form-control" name="Lastname" placeholder="Last Name" autocomplete="false">
+        </div>
+        <div class="form-group col-md-8">
+          <label for="Email">Email ID</label>
+          <input type="text" class="form-control" name="email" placeholder="Email" autocomplete="false">
+        </div>
+      </div>
+      <div class="form-group col-md-8 text-secondary">
+        <label for="Mobile">Mobile Number</label>
+        <input type="text" class="form-control" name="mobile" placeholder="Mobile Number" autocomplete="false">
+      </div>
+      <div class="form-group col-md-8">
+        <label for="Password">Set Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password" autocomplete="false">
+      </div>
+      <div class="form-group col-md-8">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+           <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+</form>
+{% endblock content %}

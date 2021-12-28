@@ -1,0 +1,106 @@
+
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="text-center">
+
+    <h2><b>Cancellation GST Application Form | Taxpayer</b></h2>
+
+        <h3 style="color:brown;"><b>GST Cancellation</b></h3>
+</div>
+<div>
+   <hr style="height:2px;border-width:0;color:gray;background-color:black">
+</div>
+<div>
+      <div>
+    <form method="POST">
+        {%csrf_token%}
+
+            <div class="form-row">
+                <div class="col-sm-12">
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b>Select Type of Business For GSTIN<b style="color:red;">*</b></b></h4></label>
+              <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+              </div>
+                </div>
+          <div class="col-sm-12">
+         <h3 style="color:blue;"><b>Business Details </b></h3>
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> Trade Name of Business<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+
+              <div class="col-sm-3">
+              <label for="Name"><h4 style="color:black;"><b> GSTIN (Optional)</b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+          </div>
+
+            <div class="col-sm-12">
+                <h3 style="color:blue;"><b>General Details </b></h3>
+
+
+            <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>Full Name<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>E-mail Id<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+                <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>Mobile Number<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+
+
+                 <div class="col-sm-3">
+            <label for="Name"><h4 style="color:black;"><b>State/UT<b style="color:red;">*</b></b></h4></label>
+            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+
+            </div>
+            </div>
+              <br>
+                <div>
+                    <hr><br>
+                                I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
+                </div>
+                <div>
+                    <br>
+                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
+                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                                <b>
+                                  <u>I Agree ALL Terms And Conditions</u>
+                                </b>
+                              </a>
+
+                     <div class="text-center">
+
+                    <br>
+                          <button class="btn btn-primary" type="submit">Continue</button>
+                       </div>
+                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
+
+
+                </div>
+
+
+
+      </form>
+          <br>
+</div>
+
+
+</div>
+
+
+{% endblock content %}
+
+

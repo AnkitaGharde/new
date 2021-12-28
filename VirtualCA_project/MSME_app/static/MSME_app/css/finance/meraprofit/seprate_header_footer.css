@@ -1,0 +1,1622 @@
+.meraprofit_header ul {
+    margin-top: -7px;
+}
+
+.container-fluid.custon_fluid {
+    padding: 0px 45px;
+}
+
+.dropdown-content a:hover {
+    font-style: normal;
+    font-weight: normal;
+    color: #03710A;
+}
+
+.before_login a {
+    background-color: rgb(252, 155, 4);
+    display: inline-block;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-top: 18px;
+    text-align: right;
+    margin-left: 20px;
+}
+
+.right_links li a img {
+    width: 18px;
+}
+
+.logo_without_ham img {
+    width: 100%;
+}
+
+.logo_main_no_ham {
+    max-width: 158px;
+    width: 100%;
+    margin-top: -12px;
+    display: block;
+}
+
+.recharge_navbar {
+    width: 100%;
+    display: block;
+    z-index: 999;
+    position: relative;
+}
+
+.dropbtn:hover {
+    background-color: #97D5AC !important;
+}
+
+.dropdown:hover a.dropbtn::after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #000;
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0px;
+    left: 20px;
+}
+
+.custom_container {
+    padding: 0px 15px;
+}
+
+.before_login a:hover {
+    text-decoration: none;
+}
+
+.logo_are_wh img {
+    width: 121px;
+}
+
+.logo_are_wh {
+    width: calc(100% - 40px);
+    float: left;
+}
+
+.left_hamb {
+    width: 35px;
+    float: left;
+}
+
+.left_hamb a img {
+    width: 24px;
+    margin-top: 6px;
+}
+
+.user_media {
+    max-width: 55px;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.user_media img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.logo_are img {
+    margin-top: 10px;
+    width: 150px;
+}
+
+.user_details {
+    max-width: calc(100% - 70px);
+    width: 100%;
+    float: left;
+}
+
+.user_media {
+    max-width: 55px;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.user_profile {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 15px 15px 15px;
+}
+
+.remove_padding {
+    padding: 0px;
+}
+
+.top_cutomer {
+    height: 34px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to right, #5e2133 66%, #e29227);
+}
+
+.cutomer_support a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cutomer_support a img {
+    float: left;
+    margin-right: 5px;
+}
+
+.cutomer_support {
+    margin-top: 7px;
+}
+
+.right_links li a {
+    color: #fff;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.right_links {
+    margin-top: 7px;
+}
+
+.recharge_navbar .navbar-default {
+    border: none;
+    margin: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.internal_services .recharge_navbar .navbar-default {
+    background-color: #5b548c;
+    border-color: #5b548c;
+    margin: 0px;
+}
+
+.recharge_navbar .navbar {
+    border-radius: 0;
+    min-height: 86px;
+}
+
+.left_hamb a {
+    display: block;
+    margin-top: -13px;
+}
+
+.left_hamb {
+    width: 35px;
+    float: left;
+}
+
+.logo_are {
+    width: calc(100% - 40px);
+    float: left;
+}
+
+.flight_struct .logo_are img {
+    width: 170px;
+}
+
+.recharge_navbar .navbar-default .navbar-nav>li>a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.recharge_navbar .navbar-nav>li>a {
+    padding: 20px;
+}
+
+.logo_main {
+    width: 100%;
+    margin-top: -20px;
+    display: inline-block;
+}
+
+.flight_struct .logo_main {
+    margin-top: -15px;
+}
+
+.internal_services .logo_main {
+    margin-top: 17px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 65px;
+    background-color: #F5F5F5;
+    left: 0px;
+    border-top: 23px solid #fff;
+    min-width: 220px;
+    z-index: 99;
+}
+
+.dropdown-content::after {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #E0E0E0;
+    position: absolute;
+    display: block;
+    content: "";
+    top: -10px;
+    left: 20px;
+}
+
+.dropdown-content a {
+    color: #2e3134;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-last {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-last {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    right: 15px;
+    border-top: 0px solid #dd4a38;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.dropdown-content-last::after {
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #dd4a38;
+    position: absolute;
+    display: block;
+    content: "";
+    top: -14px;
+    left: 110px;
+}
+
+.dropdown-content-last a {
+    color: #2e3134;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.dropdown-content-last a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-last:hover .dropdown-content-last {
+    display: block;
+}
+
+.user_details h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.user_details p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #424242;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+.user_details h5 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.hamburger_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(92, 97, 109, 0.77);
+    width: 100%;
+    z-index: 9999;
+}
+
+.top_ham_left {
+    width: 60%;
+    float: left;
+}
+
+.top_hamburger {
+    width: 100%;
+    display: inline-block;
+    padding: 15px;
+}
+
+.ham_left_menus li {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.ham_left_menus li a {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    display: block;
+}
+
+#close_hamburger img {
+    width: 20px;
+}
+
+.list-unstyled.right_list li a {
+    text-decoration: none;
+}
+
+.ham_left_menus li a:hover {
+    text-decoration: none;
+}
+
+.login_status a {
+    width: 160px;
+    background-color: #fd9f01;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login_status {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.ham_left_menus li a.active {
+    color: #fff;
+    background-color: #7773ba;
+}
+
+.list_lefts {
+    width: 100%;
+    display: inline-block;
+}
+
+.user_details {
+    max-width: calc(100% - 70px);
+    width: 100%;
+    float: left;
+}
+
+.user_media {
+    max-width: 55px;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.user_profile {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 15px 15px 15px;
+}
+
+.top_ham_right {
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+
+.hamburger_right {
+    max-width: 309px;
+    width: 100%;
+    float: left;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+.recharge_bg,
+.travel_bg,
+.egove_bg,
+.tax_bg,
+.business_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #8078BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 626px;
+}
+
+.hamburger_right ul {
+    width: 100%;
+    padding: 15px;
+    display: block;
+}
+
+.ham_left_menus li a {
+    padding: 20px 20px;
+    text-transform: capitalize;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+}
+
+.ham_left_menus li a:hover {
+    color: #fff;
+    background-color: #7773ba;
+    text-decoration: none
+}
+
+.ham_left_menus li a:focus {
+    text-decoration: none
+}
+
+.list-unstyled.right_list li a {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 2px 0px;
+    display: inline-block;
+    color: #000;
+}
+
+.right_list li a {
+    color: #000;
+}
+
+.hamburger_menu_inside {
+    max-width: 660px;
+    width: 100%;
+    display: inline-block;
+    height: 100vh;
+}
+
+.list-unstyled.right_list li a {
+    padding: 10px 10px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+.recharge_bill_inside .list-unstyled.right_list li a {
+    padding: 5px 0px;
+}
+
+.list-unstyled.right_list li a {
+    text-decoration: none;
+}
+
+.ul_full,
+.sub_menu ul {
+    width: 100% !important;
+    display: inline-block;
+}
+
+.sub_menu ul li {
+    float: left;
+    width: 50% !important;
+}
+
+.ul_full li a {
+    color: #000;
+}
+
+.sub_menu ul li a:hover {
+    text-decoration: none;
+}
+
+.sub_menu ul li a {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 2px 0px;
+    display: inline-block;
+    color: #000;
+}
+
+.ham_left_menus li a:active,
+.ham_left_menus li a:focus {
+    outline: 0;
+}
+
+.hamburger_left {
+    max-width: 350px;
+    width: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.dropbtn-user {
+    color: #fff;
+    font-size: 13px;
+    border: none;
+}
+
+.dropdown-user {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-user {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    right: 5px;
+    top: 17px;
+    border-radius: 5px;
+}
+
+.dropdown-content-user a {
+    color: #000 !important;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content-user a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.dropdown-user:hover .dropdown-content-user {
+    display: block;
+}
+
+.dropdown-content-user a:hover {
+    background-color: #383072;
+    color: #fff !important;
+}
+
+.inside_signin_left {
+    max-width: 425px;
+    width: 100%;
+    float: left;
+    padding: 0px 50px;
+    position: relative;
+    display: none;
+}
+
+#horizontal_plan,
+#signin,
+#signup {
+    z-index: 9999;
+}
+
+.inside_signin_right {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+    padding: 0px 15px;
+}
+
+.inside_signin_left::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 2px;
+    height: 520px;
+    background-color: #dadada;
+}
+
+.form_sign .form-control::placeholder {
+    font-weight: 400;
+}
+
+.sign_in-bt:hover {
+    color: #fff;
+    background-color: #5b548c;
+    border-color: #5b548c;
+    background-image: none;
+}
+
+.sign_up-active:hover,
+.sign_up-border:hover {
+    color: #fff;
+    background-color: #5b548c;
+    border-color: #5b548c;
+    background-image: none;
+}
+
+.show_passr {
+    position: relative;
+}
+
+.show_pass {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.show_pass a img {
+    width: 35px;
+}
+
+.signin_top_right img {
+    width: 100%;
+}
+
+.signin_top_right {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.signin_top_right a:hover {
+    text-decoration: none;
+}
+
+.signin_top_left p {
+    font-size: 32px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 700;
+}
+
+.signin_top_right p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #818181;
+    font-weight: 600;
+    text-align: center;
+}
+
+.signin.modal-dialog {
+    width: 450px;
+    margin: 30px auto
+}
+
+.top_login {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0 15px 0
+}
+
+.for_heads h2 {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #000;
+}
+
+.for_headsl h2 {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.form_sign {
+    margin-top: 20px
+}
+
+.help-block a {
+    font-size: 12px;
+    line-height: 18px;
+    color: #818181
+}
+
+.or_text p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    font-weight: 600;
+    text-align: center
+}
+
+.sign_in-bt {
+    width: 160px;
+    margin: 0 auto;
+    height: 41px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+    background: linear-gradient(to right, #44b962 0%, #28883d 100%);
+    border: 1px solid #41b55f
+}
+
+.social-buttons a {
+    width: 32%;
+    margin: 10px
+}
+
+.social-buttons {
+    display: flex
+}
+
+.help-block a:hover {
+    text-decoration: none
+}
+
+.pass_icon,
+.user_icon {
+    position: relative
+}
+
+.user_icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(https://www.ixifly.in/xyzalpha/assets/image/recharge/mobile-icon.png);
+    left: 8px;
+    top: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.pass_icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(https://www.ixifly.in/xyzalpha/assets/image/recharge/password.png);
+    left: 8px;
+    top: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.pass_icon .form-control,
+.user_icon .form-control {
+    padding-left: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    height: 41px
+}
+
+.signin.modal-body {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 10px
+}
+
+.inside_signin {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    padding: 15px
+}
+
+.btn-fb {
+    background-color: transparent;
+    border: 1px solid #3c5a9a;
+    color: #3c5a9a
+}
+
+.btn-fb:hover {
+    background-color: #3c5a9a;
+    border: 1px solid #3c5a9a;
+    color: #fff
+}
+
+.btn-go {
+    background-color: transparent;
+    border: 1px solid #f34a38;
+    color: #f34a38
+}
+
+.btn-go:hover {
+    background-color: #f34a38;
+    border: 1px solid #f34a38;
+    color: #fff
+}
+
+.btn-li {
+    background-color: transparent;
+    border: 1px solid #00689e;
+    color: #00689e
+}
+
+.btn-li:hover {
+    background-color: #00689e;
+    border: 1px solid #00689e;
+    color: #fff
+}
+
+.sign_up-active {
+    width: 90%;
+    margin: 0 auto;
+    height: 41px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #41b55f;
+    border: 1px solid #41b55f;
+    display: block;
+    border-radius: 25px
+}
+
+.sign_up-border {
+    width: 90%;
+    margin: 0 auto;
+    height: 41px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #f34a38;
+    display: block;
+    border-radius: 25px;
+    color: #000
+}
+
+.sign_up-border.btn-primary {
+    background-image: none;
+}
+
+.fully_bt {
+    max-width: 100%;
+    width: 100%;
+    display: inline-block
+}
+
+.half_one {
+    width: 50%;
+    float: left
+}
+
+.half_two {
+    width: 50%;
+    float: left
+}
+
+.sign_ups.checkbox label {
+    font-size: 12px;
+    line-height: 22px
+}
+
+.or_text {
+    width: 100%;
+    display: inline-block
+}
+
+.sign_in.close {
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.sign_in.close img {
+    width: 25px;
+}
+
+.signin_top_left p span {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.form_sign .form-control {
+    border-radius: 0px;
+    box-shadow: none;
+    height: 40px;
+}
+
+.sign_image {
+    width: 100%;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.modal-content {
+    width: inherit;
+    max-width: inherit;
+    height: inherit;
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+.all_finance_footer_links ul li a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    padding-right: 10px
+}
+
+.all_finance_socials_links ul li a img {
+    width: 20px;
+    height: 20px
+}
+
+.links_top_parent {
+    width: 100%;
+    display: inline-block;
+    border-top: 0px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 0px
+}
+
+.all_finance_footer_links {
+    max-width: calc(100% - 120px);
+    width: 100%;
+    float: left
+}
+
+.all_finance_footer_links ul li {
+    position: relative
+}
+
+.all_finance_footer_links ul li:after {
+    content: " ";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    left: -8px;
+    top: 8px;
+    border-radius: 50%
+}
+
+.all_finance_footer_links ul li:first-child:after {
+    background-color: transparent
+}
+
+.all_finance_footer_links ul li a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    padding-right: 10px
+}
+
+.all_finance_socials_links ul li a img {
+    width: 20px;
+    height: 20px
+}
+
+.all_finance_copyright {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    padding: 10px 0
+}
+
+.all_finance_copyright p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    text-align: center
+}
+
+.new_flight_foot {
+    background-color: #191919;
+    padding: 14px 0 0
+}
+
+.all_finance_footer_links ul li a {
+    font-size: 12px;
+    color: #000;
+    line-height: 18px;
+    padding-right: 10px;
+}
+
+.all_finance_footer_links ul li a:hover {
+    color: #f57349;
+    text-decoration: none;
+}
+
+.payment_secure_in li a img {
+    display: block;
+    margin: 0px auto 5px auto;
+}
+
+.payment_secure_in li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 50px;
+    display: block;
+}
+
+.payment_secure {
+    width: 100%;
+    padding: 25px 0px;
+    background-color: #fff;
+}
+
+.payment_secure_in li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.payment_secure_in li a:hover {
+    text-decoration: none;
+}
+
+.payment_secure_in li h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #365371;
+}
+
+.payment_secure_in li p {
+    font-size: 16px;
+    color: #2e3134;
+    line-height: 20px;
+}
+
+.msme_header {
+    background: linear-gradient(to right, #002b73 66%, #22a2d0);
+    padding: 0px 45px;
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.msme_header .navbar-default,
+.msme_header .top_cutomer {
+    background: none;
+    background-image: none;
+}
+
+.footer_msme_new {
+    width: 100%;
+    display: inline-block;
+}
+
+.footer_msme_new .links_top_parent {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+@media only screen and (max-width:767px) {
+    .signin_top_right {
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+    .for_heads {
+        width: 100%;
+        display: inline-block;
+        padding: 15px 0px 0px 0px;
+    }
+    .sign_ups.checkbox {
+        margin-bottom: 30px;
+    }
+    .signin_top_right {
+        text-align: right
+    }
+    .signin_top_left p {
+        font-size: 20px;
+        line-height: 24px;
+        color: #818181
+    }
+    .signin.modal-dialog {
+        width: 100%;
+        margin: 30px auto
+    }
+    .top_login {
+        width: 100%;
+        display: inline-block;
+        padding: 5px 0 10px 0
+    }
+    .for_heads h2 {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #343434;
+        text-align: center;
+    }
+    .form_sign {
+        margin-top: 10px
+    }
+    .help-block a {
+        font-size: 12px;
+        line-height: 18px;
+        color: #818181
+    }
+    .or_text p {
+        font-size: 14px;
+        line-height: 14px;
+        color: #000;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 5px
+    }
+    .sign_in-bt {
+        width: 160px;
+        margin: 0 auto;
+        height: 41px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 0;
+        background: linear-gradient(to right, #44b962 0%, #28883d 100%);
+        border: 1px solid #41b55f
+    }
+    .social-buttons a {
+        width: 31%;
+        margin: 5px;
+        padding: 5px 1px;
+    }
+    .social-buttons {
+        display: flex
+    }
+    .help-block a:hover {
+        text-decoration: none
+    }
+    .pass_icon,
+    .user_icon {
+        position: relative
+    }
+    .user_icon::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 99;
+        width: 24px;
+        height: 24px;
+        background-image: url(https://www.ixifly.in/xyzalpha/assets/image/recharge/mobile-icon.png);
+        left: 8px;
+        top: 10px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat
+    }
+    .pass_icon::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 99;
+        width: 24px;
+        height: 24px;
+        background-image: url(https://www.ixifly.in/xyzalpha/assets/image/recharge/password.png);
+        left: 8px;
+        top: 10px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat
+    }
+    .pass_icon .form-control,
+    .user_icon .form-control {
+        padding-left: 40px;
+        border-radius: 0;
+        box-shadow: none;
+        height: 41px
+    }
+    .signin.modal-body {
+        position: relative;
+        background-color: #fff;
+        padding: 0px
+    }
+    .inside_signin {
+        width: 97%;
+        display: block;
+        background-color: #fff;
+        padding: 15px;
+        margin: 0px auto;
+    }
+    .form_sign .form-group label {
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+    .form_sign .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .form-group.remove_mr {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .error_user_txt {
+        position: absolute;
+        left: 0;
+        color: red;
+        font-size: 12px;
+        line-height: 18px;
+        bottom: -20px;
+    }
+    .btn-fb {
+        background-color: transparent;
+        border: 1px solid #3c5a9a;
+        color: #3c5a9a
+    }
+    .btn-fb:hover {
+        background-color: transparent;
+        border: 1px solid #3c5a9a;
+        color: #3c5a9a
+    }
+    .btn-go {
+        background-color: transparent;
+        border: 1px solid #f34a38;
+        color: #f34a38
+    }
+    .btn-go:hover {
+        background-color: transparent;
+        border: 1px solid #f34a38;
+        color: #f34a38
+    }
+    .btn-li {
+        background-color: transparent;
+        border: 1px solid #00689e;
+        color: #00689e
+    }
+    .btn-li:hover {
+        background-color: transparent;
+        border: 1px solid #00689e;
+        color: #00689e
+    }
+    .form_sign .form-control {
+        border-radius: 0px;
+        box-shadow: none;
+        height: 40px;
+    }
+    .sign_up-active {
+        width: 120px;
+        margin: 0 auto;
+        height: 41px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #41b55f;
+        border: 1px solid #41b55f;
+        display: block;
+        border-radius: 25px
+    }
+    .sign_up-border {
+        width: 120px;
+        margin: 0 auto;
+        height: 41px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: transparent;
+        border: 1px solid #f34a38;
+        display: block;
+        border-radius: 25px;
+        color: #000
+    }
+    .fully_bt {
+        max-width: 340px;
+        width: 100%;
+        display: inline-block;
+    }
+    .half_one {
+        width: 50%;
+        float: left
+    }
+    .half_two {
+        width: 50%;
+        float: left
+    }
+    .sign_ups.checkbox label {
+        font-size: 10px;
+        line-height: 21px
+    }
+    .or_text {
+        width: 100%;
+        display: inline-block
+    }
+    .signin_top_left p span {
+        display: block;
+        font-size: 12px;
+        line-height: 16px
+    }
+    .vertical-alignment-helper {
+        display: table;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+    .inside_signin_right {
+        max-width: 100%;
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+    .signin_top_right a img {
+        max-width: 130px;
+        width: 100%;
+        float: left;
+    }
+    .for_headsl {
+        width: 100%;
+        display: inline-block;
+        padding: 10px 0px;
+    }
+    .vertical-align-center {
+        display: table-cell;
+        vertical-align: middle;
+        pointer-events: none;
+    }
+    .signin.modal-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        pointer-events: all;
+    }
+    .logo_left {
+        max-width: calc(100% - 36px);
+        width: 100%;
+        float: left;
+    }
+    .hambergure {
+        width: 26px;
+        float: left;
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+    .hambergure a img {
+        width: 100%;
+        margin-top: 9px;
+    }
+    .header_bg {
+        background-color: #383072;
+        padding: 10px 0px;
+        min-height: 50px;
+        width: 100%;
+        display: block;
+        border: none;
+    }
+    .logo_left a img {
+        width: 100%;
+    }
+    .search_area a img {
+        display: none;
+    }
+    .payment_secure_in li a img {
+        display: block;
+        margin: 0px auto 5px auto;
+    }
+    .payment_secure_in li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0px 50px;
+        display: block;
+    }
+    .payment_secure {
+        width: 100%;
+        padding: 25px 0px 0px 0px;
+        background-color: #f2f1f1;
+    }
+    .payment_secure_in li {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .payment_secure_in li a:hover {
+        text-decoration: none;
+    }
+    .payment_secure_in li h4 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #365371;
+    }
+    .payment_secure_in li p {
+        font-size: 16px;
+        color: #2e3134;
+        line-height: 20px;
+    }
+    header {
+        padding: 10px 15px !important;
+    }
+    .recharge_navbar .navbar-default .navbar-nav>li>a:hover {
+        background-color: red;
+    }
+    .dropbtn:hover {
+        background-color: #97D5AC !important;
+    }
+    .mobile_footer {
+        background-color: #5e2133;
+    }
+    .top_m_links ul li a {
+        color: #fff;
+        font-size: 16px;
+        padding: 8px 15px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .top_m_links {
+        width: 100%;
+        display: inline-block;
+        padding: 10px 0px;
+    }
+    .top_m_links ul li {
+        border-bottom: 1px solid #fff;
+    }
+    .all_finance_socials_links {
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .all_finance_copyright p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+        text-align: center;
+    }
+    .all_finance_copyright {
+        width: 100%;
+        display: inline-block;
+        background-color: #481625;
+        padding: 10px 0;
+    }
+    .top_m_links ul li a:hover {
+        text-decoration: none;
+    }
+    .img_inner {
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+.inside_four {
+    width: 20%;
+    float: left;
+}
+
+.links_list_four {
+    width: 100%;
+    display: inline-block;
+}
+
+.links_list_four h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.inside_four ul li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 5px 0px 0px 10px;
+    display: block;
+}
+
+.inside_four ul li {
+    position: relative;
+}
+
+.inside_four ul li::after {
+    content: " ";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #42B574;
+    position: absolute;
+    left: -8px;
+    top: 13px;
+    border-radius: 50%;
+}
+
+.inside_four ul {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.inside_four p {
+    color: #fff;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.all_finance_footer_links ul {
+    margin: 0px;
+}
+
+.add_plus_icon {
+    position: absolute;
+    right: 40px;
+    background-image: url(https://www.ixifly.in/xyzalpha-dev/assets/image/meraprofit/plus-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 24px
+}
+
+.add_minus_icon {
+    position: absolute;
+    right: 40px;
+    background-image: url(https://www.ixifly.in/xyzalpha-dev/assets/image/meraprofit/minus-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 21px
+}
+
+.hamburger_right ul li:hover {
+    background-color: #C4C4C4
+}
+
+.hamburger_right ul li:hover a {
+    color: #000
+}

@@ -1,0 +1,194 @@
+{% extends 'CA_app/Basecode/base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+    <section class="hm-services-sec">
+        <div class="container">
+            <h2>Our <span>Services</span></h2>
+<br>
+            <br>
+
+
+            <!--INTERNATIONAL SERVICES SECTION  -->
+
+
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/INTERNATIONAL SERVICES.png'%}" height="70px" width="70px" alt="" title=""></div>
+
+                        <h4>INTERNATIONAL SERVICES</h4>
+                        <p>• Advisory services on cross border transactions,Expatriate Taxation.</p>
+                        <div class="more"><a href="{%url 'international'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+
+                <!--INCOME TAX SECTION-->
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/INCOME-TAX.png'%}" alt="" title=""></div>
+                        <h4>INCOME TAX</h4>
+                        <p>Consultancy on various intricate matters pertaining to Income tax, Effective Tax Management and Advisory Services.</p>
+                        <div class="more"><a href="{%url 'income'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+
+                    <!--ACCOUNTING SECTION-->
+                    <div class="row">
+                        <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/ACCOUNTING.png'%}" alt="" title=""></div>
+                        <h4>ACCOUNTING</h4>
+                        <p>Accounting System Design & Implementation, budgeting, Financial Accounting.</p>
+                        <div class="more"><a href="{%url 'accounting'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                        <!--GST SECTIONS -->
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/Gst-icon.png'%}" height="70px" width="70px" alt="" title=""></div>
+                        <h4>GST</h4>
+                        <p>GST Migration, Obtaining GST Registration, Consultancy on matters related to GST.</p>
+                        <div class="more"><a href="{%url 'GST'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                       <!--PAYROLL SECTION  -->
+                        <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg"  width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/PAYROLL.png'%}" height="70px" width="70px" alt="" title=""></div>
+                        <h4>PAYROLL</h4>
+                        <p>• Preparation of Monthly Salary Sheet, Computation and deposit of TDS, ESI, PF etc.</p>
+                        <div class="more"><a href="{%url 'payroll'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+
+                <!--CORPORATE FINANCE SECTION-->
+                            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/CORPORATE-FINANCE.png'%}" height="80px" width="70px" alt="" title=""></div>
+                        <h4>CORPORATE FINANCE</h4>
+                        <p>Preparations of Project Reports, Preparation of CMA data for bank loans, Private placement of shares.</p>
+                        <div class="more"><a href="{%url 'C_finance'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+<!-- AUDIT SECTIONS -->
+                    <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="800" y2="0"></line>
+          <line class="left" x1="0" y1="90%" x2="0" y2="920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/AUDIT.png'%}" height="70px" width="70px" alt="" title=""></div>
+                        <h4>AUDIT</h4>
+                        <p>Broadly, Audit involves the following, Audits conducted.</p>
+                        <div class="more"><a href="{%url 'Audit'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                       <!--TDS SECTION  -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg"  width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/TDS.png'%}" height="70px" width="70px" alt="" title=""></div>
+                        <h4>TDS</h4>
+                        <p>• Preparation of Monthly Salary Sheet, Computation and deposit of TDS, ESI, PF etc.,Administration of gratuity, superannuation, pension schemes etc</p>
+                        <div class="more"><a href="{%url 'tds'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+
+                <!--CORPORATE SERVICES SECTION-->
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/CORPORATE SERVICES.png'%}" height="80px" width="70px" alt="" title=""></div>
+                        <h4>CORPORATE SERVICES</h4>
+                        <p>Preparations of Project Reports, Preparation of CMA data for bank loans, Private placement of shares, Inter-Corporate Deposit, External Credit Borrowings (ECBs), Terms loans, working capital limits, etc.</p>
+                        <div class="more"><a href="{%url 'C_service'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+<!--OUTSOURCING -->
+                    <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="800" y2="0"></line>
+          <line class="left" x1="0" y1="90%" x2="0" y2="920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/OUTSOURCING.png'%}" height="70px" width="70px" alt="" title=""></div>
+                        <h4>OUTSOURCING</h4>
+                        <p>Broadly, Audit involves the following, Audits conducted.</p>
+                        <div class="more"><a href="{%url 'outsourcing'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                       <!--TDS SECTION  -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-box-item"> <svg xmlns="http://www.w3.org/2000/svg"  width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+          <line class="left" x1="0" y1="100%" x2="0" y2="-920"></line>
+          <line class="bottom" x1="100%" y1="100%" x2="-600" y2="100%"></line>
+          <line class="right" x1="100%" y1="0" x2="100%" y2="1380"></line>
+          </svg>
+                        <div class="icons"><img src="{% static 'CA_app/images/services for non - residents icon.jpg'%}" height="120px" width="100px" alt="" title=""></div>
+                        <h4>SERVICES FOR NON - RESIDENTS</h4>
+                        <p>• Preparation of Monthly Salary Sheet, Computation and deposit of TDS, ESI, PF etc.,Administration of gratuity, superannuation, pension schemes etc</p>
+                        <div class="more"><a href="{%url 'resident'%}">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+{% endblock content %}
