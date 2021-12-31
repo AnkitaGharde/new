@@ -1,152 +1,1252 @@
-{% extends 'CA_app/Basecode/base.html' %}
-
-{% block content %}
+<!DOCTYPE html>
 {% load static %}
+<html>
+  <head>
+    <title>One Person company </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Company Registration | GST Registration | DSC Registration">
+    <meta name="description" content="MeraProfit is Indias leading financial and legal services provider. The Online Portal facilitates Register a company, file tax returns, get FSSAI and IEC licenses, Register DSC, and draft legal documents.">
+    <meta name="keywords" content="Meraprofit">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="copyright" content="2020 Meraprofit">
+    <meta name="og_site_name" property="og:site_name" content="Meraprofit.com">
+    <meta name="og_title" property="og:title" content="Company Registration | GST Registration | DSC Registration">
+    <meta name="og_image" property="og:image" content="https://www.meraprofit.com/image/header/logo.png">
+    <meta name="og_description" property="og:description" content="MeraProfit is Indias leading financial and legal services provider. The Online Portal facilitates Register a company, file tax returns, get FSSAI and IEC licenses, Register DSC, and draft legal documents." />
+    <meta name="og_url" property="og:url" content="https://www.meraprofit.com" />
+    <meta name="og_type" property="og:type" content="website" />
+    <link rel="canonical" href="https://www.meraprofit.com">
+    <meta name="theme-color" content="#383072" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="text-center">
+    <link rel="icon" href="{% static 'CA_app/images/ca_logo_new.jpg'%}" type="image/png" sizes="16x16">
 
-    <h4><b>Fresh GST Application Form | Taxpayer</b></h4>
 
-    <h4 style="color:brown;"><b> One Person Company Registration</b></h4>
-</div>
-<div>
-   <hr style="height:2px;border-width:0;color:gray;background-color:black">
-</div>
-<div>
-      <div>
-    <form method="POST">
-        {%csrf_token%}
-        <div class="col-md-12 ">
+    <link rel="stylesheet" href="{% static 'GST_app/css/gst_new/styles.css'%}">
+    <link rel="stylesheet" href="{% static 'GST_app/css/gst_new/pstyle.css'%}">
+    <link rel="stylesheet" href="{% static 'GST_app/css/gst_new/mainstyle.css'%}">
+    <link rel="stylesheet" href="{% static 'GST_app/css/gst_new/font-awesome.min.css'%}">
+<!-- Global site tag (gtag.js) - Google Ads: 804804795 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-804804795"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-            <div class="form-row">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-804804795');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119811360-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-          <div class="col-sm-12">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-119811360-1');
+    </script>
+    <script>
+      function gtag_report_conversion_dsc(url) {
+        var callback = function() {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-804804795/oGlNCMKMguUCELux4f8C',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    <script>
+      (function(w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [], f = function() {
+          var o = {
+            ti: "137001965"
+          };
+          o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+          var s = this.readyState;
+          s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <link rel="stylesheet" href="https://www.meraprofit.com/assets/css/finance/gst/seprate_header_footer.css">
+    <link rel="stylesheet" href="https://www.meraprofit.com/assets/css/recharge/demo.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://www.meraprofit.com/assets/css/finance/gst/seprate_header_footer.css">
+    <link rel="stylesheet" href="https://www.meraprofit.com/assets/css/recharge/demo.css" media="screen and (max-width: 768px)">
+  </head>
+  <body>
+    <div class="loader_upload_overlay" id="loader_upload_overlay" style="display:none;">
+      <div class="loader_upload_handle">
+        <div class="loader_upload_preload">
+          <img src="https://www.meraprofit.com/assets/image/loader.gif" alt="Please wait" title="Please wait" />
+        </div>
+        <div class="upload_waiting_txt">Please wait. Kindly donot press refresh or back button</div>
+      </div>
+    </div>
+    <style>
+      .logo_are_wh img {
+        max-width: 320px;
+        width: 100%;
+        margin-top: 12px;
+      }
 
-              <div class="col-sm-3">
-              <label for="Name"><h4 style="color:blue;"><b>Type of Business For GSTIN</b></h4></label>
-            <input type="text" class="form-control" name="Firstname" placeholder="Proprietor/Single Owner" autocomplete="false">
-          </div>
-          </div>
+      .right_links li a img {
+        width: 18px;
+        height: 18px;
+      }
 
-              <div class="col-sm-12">
-                   <h4 style="color:blue;"><b>Business Details</b></h4>
-               <div class="col-sm-3">
+      @media (max-width:767px) {
+        .logo_left {
+          max-width: 100%;
+          width: 100%;
+          float: left;
+        }
 
-                   <label for="Name"><h5 style="color:black;"><b>Name Of LLP<b style="color:red;">*</b></b></h5></label>
-                   <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-              </div>
-                  <div class="col-sm-3">
-           <label for="Name"><h5 style="color:black;"><b>Trade Name of Business<b style="color:red;">*</b></b></h5></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-                  </div>
-
-                   <div class="col-sm-3">
-           <label for="Name"><h5 style="color:black;"><b>Date of In Corporation<b style="color:red;">*</b></b></h5></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-                  </div>
-              </div>
-            <br>
-
-            <div class="col-sm-12">
-                <br>
-                <h4 style="color:blue;"><b>Business Address Details </b></h4>
-            <div class="col-sm-3">
-            <label for="Name"><h5 style="color:black;"><b>Address<b style="color:red;">*</b></b></h5></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+        .logo_left a img {
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+    </style>
+    <header class="recharge_navbar hidden-xs">
+      <div class="top_cutomer">
+        <div class="container-fluid custom_container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-unstyled list-inline pull-right right_links">
+                <li>
+                  <a href="https://www.meraprofit.com/support" type="button">
+                    <img src="https://www.meraprofit.com/assets/image/customer-assistance.svg" alt="Customer Assistance" width="100%" height="100%" /> Customer Assistance </a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid custom_container">
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="logo_main">
+                <div class="logo_are_wh">
+                  <a href="{% url 'gst_home'%}">
+<!--                    <img src="https://www.meraprofit.com/assets/image/meraprofit/gst_top_logo.png" alt="GST logo" width="100%" height="100%" />-->
+                 <h1><b><i>GST</i></b></h1>
 
-                <div class="col-sm-3">
-            <label for="Name"><h5 style="color:black;"><b>Pin Code<b style="color:red;">*</b></b></h5></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-
+                  </a>
                 </div>
-
-                <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>State/UT<b style="color:red;">*</b></b></h5></label>
-
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-                </div>
-
-                <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>District</b></h5></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-                </div>
-
+              </div>
             </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right">
+           <li class="dropdown">
+                  <a href="{% url 'gst_home'%}">Home</a>
+                </li>
 
-              <div class="col-sm-12">
-                  <h4 style="color:blue;"><b>Partner's Details</b></h4>
+                <li class="dropdown">
+                  <a href="{% url 'reg'%}">GST Registration</a>
+                </li>
+                <li class="dropdown">
+                  <a href="{% url 'gst_change'%}">GST Modification</a>
+                </li>
+                <li class="dropdown">
+                  <a href="{% url 'gst_cancel'%}">GST Cancellation</a>
+                </li>
 
-                  <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>First Name<b style="color:red;">*</b></b></h5></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
+                <li class="dropdown">
+                  <a href="https://www.meraprofit.com/finance/gst/gst-track">Track Status</a>
+                </li>
+                <li class="dropdown-last">
+                  <a href="https://www.meraprofit.com/finance/gst/gst-faqs">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="hidden-lg hidden-md hidden-sm">
+      <header class="header_bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="logo_left">
+                <a href="https://www.meraprofit.com/gst-registration">
+                  <img src="https://www.meraprofit.com/assets/image/meraprofit/gst_top_logo.png" alt="GST Logo" data-alt="" width="100%" height="100%" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-6 pull-right">
+              <div class="right_info pull-right">
+                <div class="search_area">
+                  <a href="javascript:void(0);">
+                    <img class="blurimg" lsrc="https://www.meraprofit.com/assets/image/recharge/search.png" alt="Search" data-alt="" width="100%" height="100%" />
+                  </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!-- START:: Payment Popup Model -->
+    <div id="PaymentModal" class="bg_added modal fade" role="dialog">
+      <div class="PaymentOption modal-dialog">
+        <!-- Modal content-->
+        <div class="PaymentOption modal-content">
+          <div class="PaymentOption modal-header">
+            <button type="button" class="PaymentOption close" data-dismiss="modal" id="payment_model_close">&times;</button>
+            <h4 class="PaymentOption modal-title">Select Payment Option <span class="total_header_right">Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+              </span>
+            </h4>
+          </div>
+          <div id="payment_type_select_container" class="PaymentOption modal-body clearfix">
+            <div class="BankName">
+              <ul class="nav nav-tabs left_list_pay"></ul>
+            </div>
+            <div class="FullPayment">
+              <div class="tab-content">
+                <input type="hidden" name="payment_order_id" id="payment_order_id" value="" />
+                <div id="credit_card" class="tab-pane fade imag_new_size"></div>
+                <div id="debit_card" class="tab-pane fade in active imag_new_size"></div>
+                <div id="net_banking" class="tab-pane fade imag_new_size">
+                  <!--Bank Icons Start-->
+                  <div id="bank-icons">
+                    <p>Select one of the popular banks:</p>
+                    <style type="text/css">
+                      .icon-bank img {
+                        position: absolute;
+                        top: -14px;
+                        left: 0;
+                      }
 
-
-                    <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>Last Name<b style="color:red;">*</b></b></h5></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
+                      .icon-bank {
+                        position: relative;
+                        background-image: none;
+                      }
+                    </style>
+                    <div id="icon-div">
+                      <div class="row">
+                        <!--To display the netbanking icons only if the banks are active-->
+                        <div class="bank-rect" id="bank-rect-id-1" style="border:1px solid #c9c9c9;" data-id="AXIB">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-1" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-1','radio-1','b-icon-1');">
+                          <label for="radio-1" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-1" class="icon-bank icon-AXIB21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/alogo.svg">
+                          </div>
+                        </div>
+                        <div class="bank-rect" id="bank-rect-id-2" style="border:1px solid #c9c9c9;" data-id="HDFB">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-2" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-2','radio-2','b-icon-2');">
+                          <label for="radio-2" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-2" class="icon-bank icon-HDFB21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/hdfc-logo.svg">
+                          </div>
+                        </div>
+                        <div class="bank-rect" id="bank-rect-id-3" style="border:1px solid #c9c9c9;" data-id="ICIB">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-3" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-3','radio-3','b-icon-3');">
+                          <label for="radio-3" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-3" class="icon-bank icon-ICIB21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/ilogo.svg">
+                          </div>
+                        </div>
+                        <div class="bank-rect" id="bank-rect-id-4" style="border:1px solid #c9c9c9;" data-id="SBIB">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-4" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-4','radio-4','b-icon-4');">
+                          <label for="radio-4" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-4" class="icon-bank icon-SBIB21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/sbi-logo.svg">
+                          </div>
+                        </div>
+                        <div class="bank-rect" id="bank-rect-id-5" style="border:1px solid #c9c9c9;" data-id="162B">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-5" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-5','radio-5','b-icon-5');">
+                          <label for="radio-5" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-5" class="icon-bank icon_kotak21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/klogo.svg">
+                          </div>
+                        </div>
+                        <div class="bank-rect" id="bank-rect-id-6" style="border:1px solid #c9c9c9;" data-id="INIB">
+                          <input type="radio" style="margin-top: 16px; float: left;" id="radio-6" class="radio-custom" name="radio-group" onclick="bankicons('bank-rect-id-6','radio-6','b-icon-6');">
+                          <label for="radio-6" class="radio-custom-label" id="custom-label" style="float: left;"></label>
+                          <div id="b-icon-6" class="icon-bank icon_idusInd21">
+                            <img src="https://www.meraprofit.com/assets/image/svg-icons/inlogo.svg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Bank Icons End-->
+                  <div class="netbanking_options_container my_select_pay">
+                    <select id="netbanking_select" name="netbanking_select">
+                      <option value="" selected="selected">Select Bank</option>
+                      <option value="AIRNB">Airtel Payments Bank</option>
+                      <option value="ADBB">Andhra Bank</option>
+                      <option value="AXIB">AXIS Bank</option>
+                      <option value="BOIB">Bank of India</option>
+                      <option value="BOMB">Bank of Maharashtra</option>
+                      <option value="CABB">Canara Bank</option>
+                      <option value="CSBN">Catholic Syrian Bank</option>
+                      <option value="CBIB">Central Bank Of India</option>
+                      <option value="CITNB">Citi Bank</option>
+                      <option value="CUBB">City Union Bank</option>
+                      <option value="CRPB">Corporation Bank</option>
+                      <option value="CSMSNB">Cosmos Bank</option>
+                      <option value="DCBB">DCB Bank</option>
+                      <option value="DENN">Dena Bank</option>
+                      <option value="DSHB">Deutsche Bank</option>
+                      <option value="DLSB">Dhanlaxmi Bank</option>
+                      <option value="FEDB">Federal Bank</option>
+                      <option value="HDFB">HDFC Bank</option>
+                      <option value="ICIB">ICICI Bank</option>
+                      <option value="IDBB">IDBI Bank</option>
+                      <option value="IDFCNB">IDFC FIRST Bank</option>
+                      <option value="INDB">Indian Bank </option>
+                      <option value="INOB">Indian Overseas Bank</option>
+                      <option value="INIB">IndusInd Bank</option>
+                      <option value="JAKB">Jammu &amp; Kashmir Bank</option>
+                      <option value="JSBNB">Janata Sahakari Bank Pune</option>
+                      <option value="KRKB">Karnataka Bank</option>
+                      <option value="KRVBC">Karur Vysya - Corporate Banking</option>
+                      <option value="KRVB">Karur Vysya Bank</option>
+                      <option value="162B">Kotak Mahindra Bank</option>
+                      <option value="LVRB">Lakshmi Vilas Bank</option>
+                      <option value="OBCB">Oriental Bank of Commerce</option>
+                      <option value="PMNB">Punjab &amp; Maharashtra Co-operative Bank Limited</option>
+                      <option value="PSBNB">Punjab &amp; Sind Bank</option>
+                      <option value="PNBB">Punjab National Bank</option>
+                      <option value="CPNB">Punjab National Bank - Corporate Banking</option>
+                      <option value="SRSWT">Saraswat Bank</option>
+                      <option value="SVCNB">Shamrao Vithal Co-operative Bank Ltd.</option>
+                      <option value="SOIB">South Indian Bank</option>
+                      <option value="SBIB">State Bank of India</option>
+                      <option value="SYNDB">Syndicate Bank</option>
+                      <option value="TMBB">Tamilnad Mercantile Bank</option>
+                      <option value="BHNB">The Bharat Co-op. Bank Ltd</option>
+                      <option value="TBON">The Nainital Bank</option>
+                      <option value="UCOB">UCO Bank</option>
+                      <option value="UBIB">Union Bank</option>
+                      <option value="UBIBC">Union Bank - Corporate Banking</option>
+                      <option value="UNIB">United Bank Of India</option>
+                      <option value="VJYB">Vijaya Bank</option>
+                      <option value="YESB">Yes Bank</option>
+                    </select>
+                    <span class="model_payment_type_error">
+                      <span>
+                  </div>
+                  <h3>Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+                  </h3>
+                  <div class="pay_ind_btn">
+                    <a class="model_payment_url" href="JavaScript:void(0);" onclick="validate_payment_method();">Pay now</a>
+                  </div>
                 </div>
-
-
-                    <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>Mobile number<b style="color:red;">*</b></b></h5></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
+                <div id="wallet" class="tab-pane fade imag_new_size">
+                  <img src="https://www.meraprofit.com/assets/image/paymet_method.png">
+                  <h3>Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+                  </h3>
+                  <div class="pay_ind_btn">
+                    <a class="model_payment_url" href="JavaScript:void(0);" onclick="validate_payment_method();">Pay now</a>
+                    <span class="model_payment_type_error">
+                      <span>
+                  </div>
                 </div>
-
-
-                    <div class="col-sm-3">
-                <label for="Name"><h5 style="color:black;"><b>E-mail Id<b style="color:red;">*</b></b></h5></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
+                <div id="paypal" class="tab-pane fade imag_new_size">
+                  <img src="https://www.meraprofit.com/assets/image/paypall-ad-summary.jpg">
+                  <h3>Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+                  </h3>
+                  <div class="pay_ind_btn">
+                    <a class="model_payment_url" href="JavaScript:void(0);" onclick="validate_payment_method();">Pay now</a>
+                    <span class="model_payment_type_error">
+                      <span>
+                  </div>
                 </div>
+                <div id="upi" class="tab-pane fade imag_new_size">
+                  <!-- <img src="https://www.meraprofit.com/assets/image/paypall-ad-summary.jpg"> -->
+                  <h3>Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+                  </h3>
+                  <div class="pay_ind_btn">
+                    <a class="model_payment_url" href="JavaScript:void(0);" onclick="validate_payment_method();">Pay now</a>
+                    <span class="model_payment_type_error">
+                      <span>
+                  </div>
                 </div>
-<br>
-                <div>
-                    <hr>
-<br>
-                                I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
+                <div id="rupemestro" class="tab-pane fade imag_new_size">
+                  <img src="https://www.meraprofit.com/assets/image/svg-icons/ruppay.svg" style="width:170px;">
+                  <div id="mestro_rupay_dc_option_container " class="my_select_pay"></div>
+                  <h3>Total payable amount : Rs. <span class="model_total_payamt"> 0</span>/- <span class="convence-sl"></span>
+                  </h3>
+                  <div class="pay_ind_btn">
+                    <a class="model_payment_url" href="JavaScript:void(0);" onclick="validate_payment_method();">Pay now</a>
+                  </div>
                 </div>
-                <div>
-                    <br>
-                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
-                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
-                                <b>
-                                  <u>I Agree ALL Terms And Conditions</u>
+              </div>
+            </div>
+            <!-- div class="promotion_txt"><b style="color: red;text-transform: uppercase;">Note: </b><span>You can use 100% cashback on your next transaction via Paypal. Paypal is available on all big websites/merchants across India.</span></div -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############ mobile popup ############## -->
+    <div class="mobile_accordian">
+      <div class="PaymentOption modal-header">
+        <a href="javascript:void(0);" id="mob_close" style="position: absolute;right: 25px;color: #fff;">
+          <i class="fa fa-times"></i>
+        </a>
+        <h4 class="PaymentOption modal-title">Select Payment Option <span class="total_header_right">Total payable amount : <span class="model_total_payamt"> 0</span>
+            <span class="convence-sl"></span>
+          </span>
+        </h4>
+      </div>
+      <div class="pay_acordian panel-group" id="accordion" role="tablist" aria-multiselectable="true"></div>
+      <!-- START:: Fixed Footer Make Payment for Mobile -->
+      <div class="fix_footer_amount" style="display: none;">
+        <div class="fix_footer_left">
+          <p>Total payable amount <i class="fa fa-inr" aria-hidden="true"></i>
+            <span class="model_total_payamt"> 0</span>
+          </p>
+        </div>
+        <div class="fix_footer_right"></div>
+        <!--div class="partial_pay promotion_txt" style="display:none;"><p><b>Note: </b><span>You can use 100% cashback on your next transaction via Paypal.</span></p></div -->
+      </div>
+      <!-- END:: Fixed Footer Make Payment for Mobile -->
+    </div>
+    <!-- END:: Payment Popup Model -->
+    <div class="all_section">
+      <!-- ***********Begin :: Passport section*********** -->
+      <section class="passport_sec landing_passport_sec">
+        <div class="container-fluid review_borderbottom">
+          <div class="container">
+            <ul class="tab nav nav-tabs ptab_main">
+              <li id="listone">
+                <a data-toggle="tab" href="JavaScript:Void(0)" class="active">
+                  <div class="step_icon">1</div>
+                  <div class="step_label">Form</div>
+                </a>
+              </li>
+              <li class="tab_line"></li>
+              <li id="listtwo">
+                <a data-toggle="tab" href="JavaScript:Void(0)">
+                  <div class="step_icon">2</div>
+                  <div class="step_label">Review</div>
+                </a>
+              </li>
+              <li class="tab_line"></li>
+              <li id="listthree">
+                <a data-toggle="tab" href="JavaScript:Void(0)">
+                  <div class="step_icon">3</div>
+                  <div class="step_label">Pay</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid custom_container">
+          <div class="tab-content tab-inner-content">
+            <div id="pform" class="tabcontent tab-pane fade in active passport_form">
+              <div class="sec_wrapper clearfix">
+                <!-- ***********Begin :: Passport Desktop*********** -->
+                <div class="container-fluid">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 class="rb_head common_head">Fresh GST Application Form | Taxpayer</h4>
+                  </div>
+                  <div class="recharge_option">
+                    <div class="section1_heading col-sm-12">Select Type of Business for GSTIN</div>
+                    <div class="col-sm-3 r1data">
+                      <select name="gst_business_type" id="gst_business_type" onchange="gst_business_type(this)" required>
+                        <option value="">Select</option>
+                        <option value="proprieter">Proprietor/Single Owner</option>
+                        <option value="firm">Partnership Firm</option>
+                        <option value="plc">Private Limited Company</option>
+                        <option value="llp">Limited Liability Partnership (LLP)</option>
+                        <option value="opc" selected="selected">One Person Company</option>
+                        <option value="society">Society/ Club/ Trust/ AOP/ School</option>
+                        <option value="huf">Hindu Undivided Family (HUF)</option>
+                      </select>
+                    </div>
+                    <span class="gst_business_type_error error_txt"></span>
+                  </div>
+                  <div id="opc_div">
+                    <form method="POST" action="#" id="opcForm">
+                      <input type="hidden" name="gst_business_type_db" value="opc" id="gst_business_type_db">
+                      <div class="section1 col-md-12">
+                        <div class="section1_heading col-sm-12">Business Details</div>
+                        <div class="section1_body">
+                          <div class="row1 col-sm-12">
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Name of Company <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input type="text" name="compname" id="compname">
+                                <div id="opc_error_compname" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">Trade Name of Business <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input type="text" name="tradename_opc" id="tradename_opc">
+                                <div id="opc_error_tradename_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="part3 partc col-sm-3"><div class="r1head ">PAN of Organization <span>*</span></div><div class="r1data "><input type="text" name="orgpan_firm" id="orgpan_firm"><div id="firm_error_orgpan_firm" class="clearfix form_rules"><span class="error"></span></div></div></div> -->
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head ">Date of Incorporation <span>*</span>
+                              </div>
+                              <div class="r1data r1date">
+                                <input type="text" name="doincorporation_opc" id="doincorporation_opc" autocomplete="off" placeholder="dd-mm-yyyy" maxlength="10" onkeydown="validate_number(event);" onkeyup="validate_number(event);">
+                                <div id="opc_error_doincorporation_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row1 col-sm-12">
+                            <div class="section1_heading col-sm-12"> Business Address Details</div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Address <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input type="text" name="house_no_opc" id="house_no_opc">
+                                <div id="opc_error_house_no_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Pin Code <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input name="pincode_opc" id="pincode_opc" onkeydown="limit_char_count(this,6);validate_number(event);" onkeyup="limit_char_count(this,6);validate_number(event);">
+                                <div id="opc_error_pincode_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">State/ UT <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <select name="state_opc" id="state_opc">
+                                  <option value="" selected="">Select State</option>
+                                </select>
+                                <div id="opc_error_state_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part3 partc col-sm-3">
+                              <div class="r1head">District <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input name="district_opc" id="district_opc">
+                                <div id="opc_error_district_opc" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Begin:: Contact Details -->
+                          <div class="row1 col-sm-12">
+                            <div class="section1_heading col-sm-12">Director's Details</div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">First Name <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input type="text" name="opc_fname" id="opc_fname">
+                                <div id="opc_error_opc_fname" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">Last name</div>
+                              <div class="r1data">
+                                <input type="text" name="opc_surname" id="opc_surname">
+                                <div id="opc_error_opc_surname" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Mobile No. <span>*</span>
+                              </div>
+                              <div class="input-group r1data">
+                                <span class="input-group-addon" id="basic-addon1">+91</span>
+                                <input type="text" name="opc_cont_mob" id="opc_cont_mob" maxlength="10" class="form-control">
+                                <div id="opc_error_opc_cont_mob" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">E-Mail Id <span>*</span>
+                              </div>
+                              <div class="r1data">
+                                <input name="opc_cont_email" id="opc_cont_email">
+                                <div id="opc_error_opc_cont_email" class="clearfix form_rules">
+                                  <span class="error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3"></div>
+                            <div class="part3 partc col-sm-3"></div>
+                          </div>
+                          <!-- End :: Contact details -->
+                        </div>
+                      </div>
+                      <div class="declaration_main col-md-12 ">
+                        <div class="firm_declaration_box col-sm-12">I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.</div>
+                        <div class="declaration_condition col-md-12 ">
+                          <input type="checkbox" name="opc_declaration_box" value="1" id="tc" />
+                          <a href="https://www.inditab.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                            <b>
+                              <u>I Agree ALL Terms And Conditions</u>
+                            </b>
+                          </a>
+                          <div id="opc_error_opc_declaration_box" class="clearfix form_rules">
+                            <span class="error"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 passport_btn">
+                        <input type="submit" name="PassPortBtnSubmit" class="btn btn-block btn-primary click1" value="CONTINUE" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- ***********End :: Passport Desktop*********** -->
+              </div>
+            </div>
+            <div id="review" class="tabcontent tab-pane fade passport_form">
+              <div class="sec_wrapper clearfix">
+                <!-- ***********Begin :: GST One Person Company Review Tab Desktop*********** -->
+                <div id="gst_opc_review" style="display: none;">
+                  <div class="container-fluid">
+                    <!--div class="col-xs-12 remove_padd visible-xs"><img src="assets/image/paypall-ad.jpg" class="mobile_size-img"></div-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <h4 class="rb_head common_head">GST One Person Company Preview</h4>
+                      <div class="pay_btn row review_order_id btn_last">
+                        <!-- <a href="javascript:void(0);" class="model_popup_btn hidden-xs" data-toggle="modal" data-target="#PaymentModal" >Pay</a><a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs">Pay</a> -->
+                        <a href="javascript:void(0);" class="model_popup_btn hidden-xs">Pay</a>
+                        <a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs">Pay</a>
+                      </div>
+                    </div>
+                    <div class="pull-left col-lg-9 col-md-8 col-sm-12 col-xs-12 nopd">
+                      <div class="review_section1 col-sm-12 ">
+                        <div class="section1_heading ">One Person Company Details</div>
+                        <div class="section1_body ">
+                          <div class="row1 col-sm-12">
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Name of Company</div>
+                              <div class="r1data" id="review_compname">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">Trade Name of Business</div>
+                              <div class="r1data" id="review_tradename_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                            <!-- <div class="part3 partc col-sm-3"><div class="r1head">PAN of Organization</div><div class="r1data r1date" id="review_orgpan_firm"><span></span></div></div> -->
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Date of Incorporation</div>
+                              <div class="r1data" id="review_doincorporation_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row1 col-sm-12">
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Address</div>
+                              <div class="r1data" id="review_house_no_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Pin Code</div>
+                              <div class="r1data" id="review_pincode_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">State/ UT</div>
+                              <div class="r1data" id="review_state_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">District</div>
+                              <div class="r1data" id="review_district_opc">
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row1 col-sm-12">
+                            <div class="part1 partc col-sm-12">
+                              <div class="r1head partner_title">Director's Details</div>
+                            </div>
+                            <div class="part2 partc col-sm-3">
+                              <div class="r1head">First Name</div>
+                              <div class="r1data" id="review_opc_fname">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part3 partc col-sm-3">
+                              <div class="r1head">Last Name</div>
+                              <div class="r1data r1date" id="review_opc_surname">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">Mobile No.</div>
+                              <div class="r1data" id="review_opc_cont_mob">
+                                <span></span>
+                              </div>
+                            </div>
+                            <div class="part1 partc col-sm-3">
+                              <div class="r1head">E-Mail Id</div>
+                              <div class="r1data" id="review_opc_cont_email">
+                                <span></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--div class="col-md-9 remove_padd hidden-xs"><img src="assets/image/paypall-ad.jpg" class="mobile_size-img"></div-->
+                      <div class="pay_btn col-lg-3 col-md-3 col-sm-3 col-xs-3 row review_order_id dektop_pay_btn">
+                        <a href="javascript:void(0);" class="my_back_btn">BACK</a>
+                        <!-- <a href="javascript:void(0);" class="model_popup_btn hidden-xs" data-toggle="modal" data-target="#PaymentModal" >Pay</a><a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs">Pay</a> -->
+                        <a href="javascript:void(0);" class="model_popup_btn hidden-xs">Pay</a>
+                        <a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs">Pay</a>
+                      </div>
+                    </div>
+                    <div class="pull-right col-lg-3 col-md-4 col-sm-12 col-xs-12 nopd">
+                      <div class="fare_details_parent ">
+                        <div class="fare_details_full">
+                          <div class="fare_details1">
+                            <h4 class="fare_details_title clearfix">
+                              <span class="fare_summary pull-left">Fee Summary</span>
+                              <span class="total_traveller pull-right">
+                                <i class="fa fa-inr"></i>
+                                <b class="total_traveller_amt">
+                                  <span></span>
                                 </b>
-                              </a>
-
-                 <div class="text-center">
-
-                    <br>
-                          <button class="btn btn-warning" type="submit">Continue & Pay</button>
-                 </div>
-                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
-
-
+                              </span>
+                            </h4>
+                          </div>
+                          <div class="fare_details2">
+                            <button class="accordion clearfix" type="button">
+                              <div class="pull-left col-lg-7 col-md-7 col-sm-7 col-xs-7">GST Fee</div>
+                              <div class="pull-left col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right full_amt">
+                                <i class="fa fa-inr"></i>
+                                <span></span>
+                              </div>
+                            </button>
+                            <div class="panel" style="">
+                              <ul class="onward_fee" id="review_gst_booklet">
+                                <li class="gov_fee">
+                                  <samp>Government Fee</samp>
+                                  <samp>
+                                    <i class="fa fa-inr"></i>
+                                    <span></span>
+                                  </samp>
+                                </li>
+                                <li class="consultant_fee">
+                                  <samp>Application Filing Fee</samp>
+                                  <samp>
+                                    <i class="fa fa-inr"></i>
+                                    <span></span>
+                                  </samp>
+                                </li>
+                                <li class="gst_charges">
+                                  <samp>GST Charges (+)</samp>
+                                  <samp>
+                                    <i class="fa fa-inr"></i>
+                                    <span></span>
+                                  </samp>
+                                </li>
+                                <!-- <li class="convenience_fee"><samp>Convenience Fee</samp><samp><i class="fa fa-inr"></i><span></span></samp></li> -->
+                              </ul>
+                            </div>
+                            <div class="discount_block clearfix" style="display:none;">
+                              <span class="pull-left col-lg-8 col-md-8 col-sm-8 col-xs-8">Discount (-)</span>
+                              <span class="pull-left col-lg-4 col-md-4 col-sm-4 col-xs-4 text-right">
+                                <i class="fa fa-inr"></i>
+                                <b class="coupon_discount_amt">743</b>
+                              </span>
+                            </div>
+                            <div class="grand_total clearfix">
+                              <span class="pull-left col-lg-7 col-md-7 col-sm-7 col-xs-7">GRAND TOTAL</span>
+                              <span class="pull-left col-lg-5 col-md-5 col-sm-5 col-xs-5 text-right">
+                                <i class="fa fa-inr"></i>
+                                <b class="grand_total_amt">
+                                  <span></span>
+                                </b>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="row"><div class="col-md-12 col-xs-12"><img src="assets/image/paypall-ad-summary.jpg" class="mobile_size-img img-responsive" style="margin-bottom: 15px;"></div></div><div class="promotion_txt"><b style="color: red;text-transform: uppercase;">Note: </b><span>You can use 100% cashback on your next transaction via Paypal. Paypal is available on all big websites/merchants across India.</span></div>	-->
+                      <div class="pay_btn col-lg-12 col-md-12 col-sm-12 col-xs-12 row review_order_id">
+                        <a href="javascript:void(0);" class="my_back_btn my_back_btn_last" style="display: none;">BACK</a>
+                        <!-- <a href="javascript:void(0);" class="model_popup_btn hidden-xs" data-toggle="modal" data-target="#PaymentModal" >Pay</a><a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs" style="width: 75px;float: right;">Pay</a> -->
+                        <a href="javascript:void(0);" class="model_popup_btn hidden-xs">Pay</a>
+                        <a href="javascript:void(0);" class="model_popup_btn_mobile visible-xs" style="width: 75px;float: right;">Pay</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-    </form>
-          <br>
-</div>
+                <!-- ***********End :: GST Firm Review Tab Desktop*********** -->
+              </div>
+            </div>
+            <div id="payment" class="tabcontent tab-pane fade passport_form">
+              <h2>Payment </h2>
+              <p>Payment Process</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid custom_container disclaimer_sec">
+          <div class="disclaimer_main col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h5 class="heading_tab">DISCLAIMER POLICY</h5>
+            <div class="disclaimer_text" style="text-align : justify ;">This disclaimer is applicable to this website. By using or accessing this website you agree with the terms and conditions as mentioned on this website. This website may contain hyperlinks to websites that are not managed by us. We do not accept any responsibility for the content, the availability or the quality of offers made on external websites. This is just a website that assists on Financial, Taxation & Secretarial Services. This is not a Government Website. We are a Private Company managing this website and providing services and assistance for Business Benefits. Although the greatest possible care has been exercised to ensure the correctness and completeness of the information provided on this website, we do not accept any liability for it.</div>
+          </div>
+        </div>
+      </section>
+      <!-- ***********end :: Passport section*********** -->
+    </div>
+    <section class="payment_secure hidden-xs">
+      <div class="container-fluid custom_container">
+        <div class="row">
+          <ul class="list-unstyled list-inline payment_secure_in">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="https://www.meraprofit.com/assets/image/secure_pay.png" width="100%" height="100%" alt="100% Secure Payments">
+                <h4>100% Secure Payments</h4>
+                <p>Moving your card details to a much more secured place</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="https://www.meraprofit.com/assets/image/trust_pay.png" width="100%" height="100%" alt="Trust Pay">
+                <h4>Trust Pay</h4>
+                <p>100% secure payment. SSL Protection</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meraprofit.com/support">
+                <img src="https://www.meraprofit.com/assets/image/24x7_support.png" width="100%" height="100%" alt="Support">
+                <h4>Support</h4>
+                <p>We’re here to help. Have a query and need help? Click here</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="new_flight_foot hidden-xs">
+      <div class="container-fluid custom_container">
+        <div class="row">
+          <div class="links_top_parent">
+            <div class="inditab_footer_links">
+              <ul class="list-inline list-unstyled">
+                <li>
+                  <a href="https://www.meraprofit.com/about-us">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/contact-us">COMPLAINTS</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/privacy-policy">PRIVACY</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/terms-and-conditions">TERMS OF USE</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/support">CUSTOMER SERVICE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="inditab_socials_links">
+              <ul class="list-inline list-unstyled pull-right">
+                <li>
+                  <a href="https://www.facebook.com/meraprofit/" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/fb.png" alt="Meraprofit Facebook" width="100%" height="100%" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC5FaqGTSCWebHCg2egEGVJg" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/youtube.png" alt="Meraprofit Youtube" width="100%" height="100%" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/meraprofit/" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/insta.png" alt="Meraprofit Instagram" width="100%" height="100%" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://in.linkedin.com/company/meraprofit" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/linkedin.png" alt="Meraprofit linkedin" width="100%" height="100%" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inditab_copyright">
+        <div class="container-fluid custom_container">
+          <p>© 2021 Meraprofit Quicksolutions Pvt Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <footer class="mobile_footer hidden-lg hidden-md hidden-sm">
+      <div class="top_m_links">
+        <ul>
+          <li>
+            <a href="https://www.meraprofit.com/about-us">ABOUT US</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/contact-us">COMPLAINTS</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/privacy-policy">PRIVACY</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/terms-and-conditions">TERMS OF USE</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/support">CUSTOMER SERVICE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inditab_socials_links">
+        <ul class="list-inline list-unstyled text-center">
+          <li>
+            <a href="https://www.facebook.com/meraprofit/" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/fb.png" alt="Meraprofit Facebook Page" width="100%" height="100%">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC5FaqGTSCWebHCg2egEGVJg" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/youtube.png" alt="Meraprofit Youtube Page" width="100%" height="100%">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/meraprofit/" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/insta.png" alt="Meraprofit Instagram Page" width="100%" height="100%">
+            </a>
+          </li>
+          <li>
+            <a href="https://in.linkedin.com/company/meraprofit" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/linkedin.png" alt="Meraprofit Linkedin Page" width="100%" height="100%">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="inditab_copyright">
+        <div class="container-fluid custom_container">
+          <p>© 2021 Meraprofit Quicksolutions Pvt Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var Base_URL = 'https://www.meraprofit.com/';
+    </script>
 
-
-</div>
-
-
-</div>
-
-
-{% endblock content %}
-
-
-
-
-
-
+    <script src="{% static 'GST_app/js/finance/meraprofit/jquery-2.2.4.min.js'%}"></script>
+    <script src="{% static 'GST_app/js/finance/meraprofit/bootstrap.min.js'%}"></script>
+    <script src="{% static 'GST_app/js/finance/meraprofit/rd-navbar.js'%}"></script>
+    <script src="{% static 'GST_app/js/finance/meraprofit/script.js'%}"></script>
+    <script src="{% static 'GST_app/js/finance/meraprofit/custom.js'%}"></script>
+    <script type="text/javascript" src="{% static 'GST_app/js/finance/login.js'%}"></script>
+ <!-- gst js -->
+    <script src="https://www.meraprofit.com/assets/js/finance/gst/opc/gst.js"></script>
+    <script src="https://www.meraprofit.com/assets/js/finance/gst/opc/gst-opc-form.js"></script>
+    <script src="https://www.meraprofit.com/assets/js/state_dist_json.js"></script>
+    <script src="https://www.meraprofit.com/assets/js/dis_police_station.js"></script>
+    <script src="https://www.meraprofit.com/assets/js/finance/gst/opc/validate_gst_opc_payment_options.js"></script>
+    <script type="text/javascript">
+      function editGstForm() {
+        $('.ptab_main li').removeClass('active');
+        $('.ptab_main li a').removeClass('active');
+        $('.ptab_main li#listone').addClass('active');
+        $('.ptab_main li#listone a').addClass('active');
+        $('#review').removeClass('active');
+        $('#review').removeClass('in');
+        $('#pform').addClass('active in');
+      } /* ************** Begin::OPC Tab submit ***************** */
+      $("form#opcForm").submit(function(e) {
+        e.preventDefault(); /* alert('feg'); */
+        var formData = new FormData(this);
+        var errorflag = 0;
+        var req_field = 0; /* var nospecial=/^[^*|\":<>[\]{}`\\()';@&$]+$/; */
+        var nospecial = /^[a-zA-Z ]*$/;
+        var pin = /^\d{6}$/;
+        var regaadhr = /^\d{4}\s\d{4}\s\d{4}$/g;
+        var compname = $("#compname").val();
+        var tradename_opc = $("#tradename_opc").val();
+        var regpan = /^([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}?$/;
+        var doincorporation_opc = $("#doincorporation_opc").val();
+        var house_no_opc = $("#house_no_opc").val();
+        var pincode_opc = $("#pincode_opc").val();
+        var state_opc = $("#state_opc").val();
+        var district_opc = $("#district_opc").val();
+        var opc_fname = $("#opc_fname").val();
+        var opc_surname = $("#opc_surname").val();
+        var opc_cont_mob = $("#opc_cont_mob").val();
+        var opc_cont_email = $("#opc_cont_email").val();
+        if (compname == "") {
+          $("#compname").addClass('inpt_error');
+          $('#opc_error_compname span').html('(Company Name is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (compname.length < 2 || compname.length > 50) {
+          $("#compname").addClass(' inpt_error ');
+          $('#opc_error_compname span').html('(Company Name should be of 2-50 characters)');
+          errorflag = 1;
+        } else {
+          $("#compname").removeClass('inpt_error');
+          $('#opc_error_compname span').html('');
+        }
+        if (tradename_opc == "") {
+          $("#tradename_opc").addClass('inpt_error');
+          $('#opc_error_tradename_opc span').html('(Trade Name is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (tradename_opc.length < 2 || tradename_opc.length > 50) {
+          $("#tradename_opc").addClass(' inpt_error ');
+          $('#opc_error_tradename_opc span').html('(Trade Name should be of 2-50 characters)');
+          errorflag = 1;
+        } else {
+          $("#tradename_opc").removeClass('inpt_error');
+          $('#opc_error_tradename_opc span').html('');
+        }
+        var arr1 = doincorporation_opc.split('-');
+        var nwDateGet = arr1[2] + '-' + arr1[1] + '-' + arr1[0];
+        var nwDateGet = new Date(nwDateGet);
+        var today = new Date();
+        if (doincorporation_opc == "") {
+          $("#doincorporation_opc").addClass('inpt_error');
+          $('#opc_error_doincorporation_opc span').html('(Date Of Incorporation is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (nwDateGet == "Invalid Date") {
+          $("#doincorporation_opc").addClass('inpt_error');
+          $('#opc_error_doincorporation_opc span').html('(Enter a valid date)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (nwDateGet > today) {
+          $("#doincorporation_opc").addClass('inpt_error');
+          $('#opc_error_doincorporation_opc span').html('(You cannot enter a date in the future!)');
+          errorflag = 1;
+          req_field = 1;
+        } else {
+          $("#doincorporation_opc").removeClass('inpt_error');
+          $('#opc_error_doincorporation_opc span').html('');
+        }
+        if (house_no_opc == "") {
+          $("#house_no_opc").addClass(' inpt_error ');
+          $('#opc_error_house_no_opc span').html('(House no/ town /city address is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else {
+          $("#house_no_opc").removeClass('inpt_error');
+          $('#opc_error_house_no_opc span').html('');
+        }
+        if (pincode_opc == "") {
+          $("#pincode_opc").addClass(' inpt_error ');
+          $('#opc_error_pincode_opc span').html('(Pin Code is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (!pin.test(pincode_opc)) {
+          $('#pincode_opc').addClass(' inpt_error ');
+          $('#opc_error_pincode_opc span').html('(Pin code should be 6 digits)');
+          errorflag = 1;
+        } else if (pincode_opc == "000000") {
+          $('#pincode_opc').addClass(' inpt_error ');
+          $('#opc_error_pincode_opc span').html('(Please enter valid Pin code)');
+          errorflag = 1;
+        } else {
+          $("#pincode_opc").removeClass('inpt_error');
+          $('#opc_error_pincode_opc span').html('');
+        }
+        if (state_opc == "") {
+          $("#state_opc").addClass(' inpt_error ');
+          $('#opc_error_state_opc span').html('(Please select state)');
+          errorflag = 1;
+          req_field = 1;
+        } else {
+          $("#state_opc").removeClass('inpt_error');
+          $('#opc_error_state_opc span').html('');
+        }
+        if (opc_fname == "") {
+          $("#opc_fname").addClass(' inpt_error ');
+          $('#opc_error_opc_fname span').html('(Director First Name is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (opc_fname.length < 2 || opc_fname.length > 50) {
+          $("#opc_fname").addClass(' inpt_error ');
+          $('#opc_error_opc_fname span').html('(Director First Name and Middle Name should be of 2-50 characters)');
+          errorflag = 1;
+        } else if (!(nospecial.test(opc_fname))) {
+          $("#opc_fname").addClass('inpt_error');
+          $('#opc_error_opc_fname span').html('(Special character and numeric digit. is not allowed in Director name)');
+          errorflag = 1;
+        } else {
+          $("#opc_fname").removeClass('inpt_error');
+          $('#opc_error_opc_fname span').html('');
+        }
+        if (opc_surname != "") {
+          if (opc_surname.length < 2 || opc_surname.length > 50) {
+            $("#opc_surname").addClass(' inpt_error ');
+            $('#opc_error_opc_surname span').html('(Director Last Name should be of 2-50 characters)');
+            errorflag = 1;
+          } else if (!(nospecial.test(opc_surname))) {
+            $("#opc_surname").addClass('inpt_error');
+            $('#opc_error_opc_surname span').html('(Special character and numeric digit. is not allowed in Director Last name)');
+            errorflag = 1;
+          } else {
+            $("#opc_surname").removeClass('inpt_error');
+            $('#opc_error_opc_surname span').html('');
+          }
+        }
+        if (opc_cont_mob == "") {
+          $('#opc_cont_mob').addClass(' inpt_error ');
+          $('#opc_error_opc_cont_mob span').html('(Mobile No. is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (opc_cont_mob.length < 10 || opc_cont_mob.length > 10) {
+          $('#opc_cont_mob').addClass(' inpt_error ');
+          $('#opc_error_opc_cont_mob span').html('(Please enter valid Mobile No.)');
+          errorflag = 1;
+        } else if (!(/^\d{10,13}$/.test(opc_cont_mob))) /* /^\d{10,13}$/ */ {
+          $('#opc_cont_mob').addClass(' inpt_error ');
+          $('#opc_error_opc_cont_mob span').html('(Please enter valid Mobile No.)');
+          errorflag = 1;
+        } else if (opc_cont_mob == "0000000000") {
+          $('#opc_cont_mob').addClass(' inpt_error ');
+          $('#opc_error_opc_cont_mob span').html('(Please enter valid Mobile No.)');
+          errorflag = 1;
+        } else {
+          $('#opc_cont_mob').removeClass('inpt_error');
+          $('#opc_error_opc_cont_mob span').html('');
+        }
+        if (opc_cont_email == "") {
+          $("#opc_cont_email").addClass(' inpt_error ');
+          $('#opc_error_opc_cont_email span').html('(Email is required)');
+          errorflag = 1;
+          req_field = 1;
+        } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(opc_cont_email))) {
+          $("#opc_cont_email").addClass(' inpt_error ');
+          $('#opc_error_opc_cont_email span').html('(Please enter valid Email Id)');
+          errorflag = 1;
+        } else {
+          $("#opc_cont_email").removeClass('inpt_error');
+          $('#opc_error_opc_cont_email span').html('');
+        }
+        var atc_chk = $("input[name='opc_declaration_box']:checked").val();
+        if (atc_chk == 1 || atc_chk == true) {
+          $(".declaration_condition_link").removeClass('tc_error');
+          $('#opc_error_opc_declaration_box span').html("");
+        } else {
+          $(".declaration_condition_link").addClass('tc_error');
+          errorflag = 1;
+          $('#opc_error_opc_declaration_box span').html("(Please accept all the terms and conditions)");
+        }
+        if (errorflag == 0) {
+          $('.loader_upload_overlay').show(); /* $('.preload').show(); */
+          $.ajax({
+            url: Base_URL + "finance/gst1/opc/gstopc_post_data",
+            type: 'POST',
+            data: formData,
+            /* timeout: 60000, Set your timeout value in milliseconds or 0 for unlimited */ cache: false,
+            contentType: false,
+            processData: false,
+            success: function(data) {
+              $('.loader_upload_overlay').hide();
+              data = data.trim();
+              obj = JSON.parse(data);
+              console.log(obj.status);
+              if (obj.status == 200) {
+                /* $('.preload').hide(); */
+                $('#review_compname span').html(obj.result.compname);
+                $('#review_tradename_opc span').html(obj.result.tradename_opc);
+                if (obj.result.doincorporation_opc == '0000-00-00') {
+                  $('#review_doincorporation_opc span').html('');
+                } else {
+                  $("#review_doincorporation_opc span").html(obj.result.doincorporation_opc);
+                }
+                $('#review_house_no_opc span').html(obj.result.house_no_opc);
+                $('#review_pincode_opc span').html(obj.result.pincode_opc);
+                $('#review_state_opc span').html(obj.result.state_opc);
+                $('#review_district_opc span').html(obj.result.district_opc);
+                $('#review_opc_fname span').html(obj.result.opc_fname);
+                $('#review_opc_surname span').html(obj.result.opc_surname);
+                $('#review_opc_cont_email span').html(obj.result.opc_cont_email);
+                $('#review_opc_cont_mob span').html(obj.result.opc_cont_mob);
+                $('#review_gst_booklet li.gov_fee samp span').html(obj.result.gov_fee);
+                $('#review_gst_booklet li.consultant_fee samp span').html(obj.result.consultant_fee);
+                $('#review_gst_booklet li.gst_charges samp span').html(obj.result.gst_charges);
+                $('#review_gst_booklet li.convenience_fee samp span').html(obj.result.convenience_fee);
+                $('.fare_details2 .full_amt span').html(obj.result.grand_total);
+                $('.grand_total .grand_total_amt span').html(obj.result.grand_total);
+                $('.fare_details_title .total_traveller span').html(obj.result.grand_total);
+                $('.model_total_payamt').html(obj.result.grand_total);
+                $("html, body").animate({
+                  scrollTop: 0
+                }, "slow");
+                $(".my_back_btn").click(function() {
+                  $('#listone a').attr("href", "#pform");
+                  $('#listone a').addClass("active");
+                  $('#pform').addClass("in active");
+                  $("#listtwo a").attr("href", "JavaScript:Void(0)");
+                  $("#listthree a").attr("href", "JavaScript:Void(0)");
+                  $('#listtwo').removeClass("active");
+                  $('#listtwo a').removeClass("active");
+                  $('#review').removeClass("in active");
+                });
+                $('#listone a').attr("href", "#pform");
+                $('#listone a').removeClass("active");
+                $('#listtwo').addClass("active");
+                $('#listtwo a').addClass("active");
+                $('#pform,#review').removeClass("in active");
+                $('#review').addClass("in active");
+                var order_id = obj.result.order_id;
+                var url = Base_URL + 'finance/gst1/opc/payment_opc?order_id=' + order_id;
+                $(".model_popup_btn").attr("href", url);
+                $(".model_popup_btn_mobile").attr("href", url);
+                $(".model_popup_btn").click(function() {
+                  $('.loader_upload_overlay').show();
+                });
+                $(".model_popup_btn_mobile").click(function() {
+                  $('.loader_upload_overlay').show();
+                }); /* $(".model_popup_btn").click(function(){	var order_id=obj.result.order_id; alert(order_id);	$('#payment_order_id').val(order_id);	$('#model_payment_type_error').html('');	});	$(".model_popup_btn_mobile").click(function(){	var order_id=obj.result.order_id; alert(order_id);	$('#payment_order_id').val(order_id);	$('#model_payment_type_error').html('');	});	$("#payment_type_select_container .left_list_pay li").click(function(){	var order_id=obj.result.order_id;	$('#payment_order_id').val(order_id);	}); */ /* window.location.href=Base_URL+'finance/gst1/opc/fresh_gst_application/#review'; */
+                $("#gst_opc_review").show();
+              } else {
+                window.location.href = Base_URL;
+              }
+            }
+          });
+        }
+      }); /* ************** End::OPC Tab submit ***************** */
+    </script>
+  </body>
+</html>

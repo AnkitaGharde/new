@@ -430,8 +430,10 @@
               </button>
               <div class="logo_main">
                 <div class="logo_are_wh">
-                  <a href="https://www.meraprofit.com/msme-registration">
-                    <img src="https://www.meraprofit.com/assets/image/meraprofit/msme-logo.png" alt="msme logo" width="100%" height="100%">
+                  <a href="{% url 'msme_home'%}">
+<!--                    <img src="https://www.meraprofit.com/assets/image/meraprofit/msme-logo.png" alt="msme logo" width="100%" height="100%">-->
+                  <h1><b><i>MSME</i></b></h1>
+
                   </a>
                 </div>
               </div>
@@ -1663,14 +1665,18 @@
     <script>
       var Base_URL = "https://www.meraprofit.com/"
     </script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/jquery-2.2.4.min.js"></script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/bootstrap.min.js"></script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/rd-navbar.js"></script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/script.js"></script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/custom.js"></script>
-    <script type="text/javascript" src="https://www.meraprofit.com/assets/js/finance/login.js"></script>
-    <script src="assets/js/finance/meraprofit/owl.carousel.min.js"></script>
-    <script src="https://www.meraprofit.com/assets/js/finance/meraprofit/sticky_form.js"></script>
+
+    <script src="{% static 'MSME_app/js/finance/meraprofit/jquery-2.2.4.min.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/bootstrap.min.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/rd-navbar.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/script.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/custom.js'%}"></script>
+
+    <script type="text/javascript" src="{% static 'MSME_app/js/finance/login.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/sticky_form.js'%}"></script>
+
+
     <script>
       $(document).ready(function() {
         function e(e) {

@@ -1,165 +1,1256 @@
-
-{% extends 'CA_app/Basecode/base.html' %}
-
-{% block content %}
+<!DOCTYPE html>
 {% load static %}
+<html>
+  <head>
+    <title>MSME/Udyam Registration Online | MSME/Udyam Registration Process, Fees & Eligibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'CA_app/images/ca_logo_new.jpg'%}" type="image/png" sizes="16x16">
+
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/seprate_header_footer.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/navbar-rd.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/all_form_style.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/custom.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/meraprofit/fonts_lato.css'%}">
+    <link rel="stylesheet" href="{% static 'MSME_app/css/finance/gst/seprate_header_footer.css'%}">
 
 
 
-    <div class="text-center">
-        <h2><b>MSME Application Form</b></h2>
-        <h4 style="color:brown;"><b>MSME Registration</b></h4>
+   <!-- Global site tag (gtag.js) - Google Ads: 804804795 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-804804795"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-804804795');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119811360-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-119811360-1');
+    </script>
+    <script>
+      function gtag_report_conversion_dsc(url) {
+        var callback = function() {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-804804795/oGlNCMKMguUCELux4f8C',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    <script>
+      (function(w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [], f = function() {
+          var o = {
+            ti: "137001965"
+          };
+          o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function() {
+          var s = this.readyState;
+          s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    </script>
+    <style>
+      .recharge_navbar {
+        width: 100%;
+        display: block;
+        z-index: 999;
+        position: relative;
+        background: linear-gradient(to right, #002b73 66%, #22a2d0);
+        padding: 0px 40px;
+      }
+
+      .top_cutomer {
+        height: 34px;
+        width: 100%;
+        display: block;
+        background: none;
+      }
+
+      .recharge_navbar .navbar {
+        border-radius: 0;
+        min-height: 50px;
+        background: none;
+        box-shadow: none;
+      }
+
+      .recharge_navbar .navbar-default .navbar-nav>li>a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+      }
+
+      #loader_upload_overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00000080;
+        z-index: 3;
+        cursor: pointer
+      }
+
+      .loader_upload_handle {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center
+      }
+
+      .loader_upload_preload {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        text-align: center
+      }
+
+      .loader_upload_preload img {
+        width: 150px;
+        height: auto
+      }
+
+      .upload_waiting_txt {
+        color: #fff;
+        font-weight: 500;
+        padding: 10px 0;
+        display: block;
+        margin: 0 auto;
+        width: 50%
+      }
+
+      /**/
+      .dsc_r_block {
+        display: block;
+        width: 960px;
+        background-color: #fff;
+        padding: 0px 20px 30px 20px;
+        margin: 0px auto;
+      }
+
+      .all_section {
+        width: 100%;
+        display: table;
+        padding: 0px;
+        background-color: #fff;
+        margin: 6px auto 0px auto;
+        padding: 0px 40px;
+      }
+
+      .dsc_r_block {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        padding: 0px 0px 30px 0px;
+        ;
+        margin: 0px auto;
+      }
+
+      /**/
+      .common_head::before {
+        content: "";
+        position: absolute;
+        right: -70px;
+        top: 14px;
+        width: 50px;
+        height: 6px;
+        background: transparent;
+        border-top: 0px solid #01b7f1;
+      }
+
+      .passport_sec .sec_wrapper {
+        border-radius: 3px;
+        margin: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-top: 0;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px !important;
+        background-color: transparent;
+        box-shadow: none;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .r1data input,
+      .r1data select {
+        background: #fbfbfb;
+        background-image: none;
+        font-weight: 400;
+        display: block;
+        padding: 6px 15px;
+        font-size: 14px;
+        line-height: 15px;
+        color: #333;
+        background-image: none;
+        border-radius: 4px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border: 1px solid #ccc;
+        width: 100%;
+        height: 33px;
+      }
+
+      .section1_heading {
+        color: #002a72;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 27px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+        padding-left: 15px;
+      }
+
+      .r1data {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      ul.tab.ptab_main li.tab_line {
+        width: 38%;
+      }
+
+      .passport_btn input {
+        width: auto !important;
+        background-color: #75c158;
+        text-shadow: none;
+        background-image: none;
+        line-height: 30px;
+        font-size: 16px;
+        float: right;
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 15px;
+        padding: 5px 20px;
+        border: 1px solid #75c158;
+        font-weight: 600;
+      }
+
+      .review_borderbottom {
+        padding-top: 7px;
+        padding-bottom: 10px;
+        margin-top: 66px;
+      }
+
+      input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader_upload_overlay" id="loader_upload_overlay" style="display:none;">
+      <div class="loader_upload_handle">
+        <div class="loader_upload_preload">
+          <img src="https://www.meraprofit.com/assets/image/loader.gif" alt="Please wait" title="Please wait" />
+        </div>
+        <div class="upload_waiting_txt">Please wait.....</div>
+      </div>
     </div>
-<div>
-   <hr style="height:2px;border-width:0;color:gray;background-color:black">
+    <style>
+      .logo_are_wh img {
+        max-width: 320px;
+        width: 100%;
+        margin-top: 12px;
+      }
 
-</div>
-<div>
-      <div>
-    <form method="POST">
-        {%csrf_token%}
-        <div class="form-row">
-            <div class="col-sm-12">
-                  <h3 style="color:blue;"><b>Business Details</b></h3>
+      .right_links li a img {
+        width: 18px;
+        height: 18px;
+      }
 
-              <div class="col-sm-3">
-              <label for="Name"><h4 style="color:black;"><b> Select Type of Business For GSTIN<b style="color:red;">*</b></b></h4></label>
-              <input type="text" class="form-control" name="Firstname" placeholder="Proprietor/Single Owner" autocomplete="false">
-             </div>
+      @media (max-width:767px) {
+        .logo_left {
+          max-width: 100%;
+          width: 100%;
+          float: left;
+        }
 
-                <div class="col-sm-3">
-                    <label for="Name"><h4 style="color:black;"><b>Name Of Application<b style="color:red;">*</b></b></h4></label>
-                    <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+        .logo_left a img {
+          width: 100%;
+          margin-top: 8px;
+        }
+      }
+    </style>
+    <header class="recharge_navbar hidden-xs">
+      <div class="top_cutomer">
+        <div class="container-fluid custom_container">
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-unstyled list-inline pull-right right_links">
+                <li>
+                  <a href="https://www.meraprofit.com/support" type="button">
+                    <img src="https://www.meraprofit.com/assets/image/customer-assistance.svg" alt="Customer Assistance" width="100%" height="100%" /> Customer Assistance </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid custom_container">
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="logo_main">
+                <div class="logo_are_wh">
+                  <a href="{% url 'msme_home'%}">
+<!--                    <img src="https://www.meraprofit.com/assets/image/meraprofit/msme-logo.png" alt="msme logo" width="100%" height="100%" />-->
+
+                  <h1><b><i>MSME</i></b></h1>
+                  </a>
+                </div>
               </div>
-
-                <div class="col-sm-3">
-                    <label for="Name"><h4 style="color:black;"><b> Name Of Business<b style="color:red;">*</b></b></h4></label>
-                    <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="https://www.meraprofit.com/gst-registration">GST Registration</a>
+                </li>
+                <li class="dropdown">
+                  <a href="https://www.meraprofit.com/msme-registration#documents-required_parent">Documents Required</a>
+                </li>
+                <li class="dropdown">
+                  <a href="https://www.meraprofit.com/uploads/sample-certificate.pdf" target="_blank">Sample Certificate</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/msme-registration#faqs_qa_parent">FAQ</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/msme-registration#benefitsMsme">Benefits of MSME/Udyam</a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-                <div class="col-sm-3">
-
-              <label for="Name"><h4 style="color:black;"><b> Nature Of Business<b style="color:red;">*</b></b></h4></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-          </div>
-          </div>
-
-
-            <div class="col-sm-12">
-                <div class="col-sm-3">
-            <label for="Name"><h4 style="color:black;"><b>Social Category<b style="color:red;">*</b></b></h4></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-            </div>
-
-                <div class="col-sm-3">
-            <label for="Name"><h4 style="color:black;"><b>Specially Abled(DIVYANG)<b style="color:red;">*</b></b></h4></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-            </div>
-
-                <div class="col-sm-3">
-
-            <label for="Name"><h4 style="color:black;"><b>Do you have a GST?<b style="color:red;">*</b></b></h4></label>
-            <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
-            </div>
-            </div>
-
-            <div class="col-sm-12">
-
-                <h4 style="color:blue;"><b>Employee Details</b></h4>
-
-                <div class="col-sm-6">
-                <label for="Name"><h4 style="color:black;"><b>No. of person employee-Male<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-                </div>
-
-                <div class="col-sm-6">
-                <label for="Name"><h4 style="color:black;"><b>No. of person employee-Female<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-                </div>
-            </div>
-
-
-          <div class="col-sm-12">
-
-                <h4 style="color:blue;"><b>Business Address Details</b></h4>
-
-              <div class="col-sm-4">
-                <label for="Name"><h4 style="color:black;"><b>Address<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
+        </div>
+      </nav>
+    </header>
+    <div class="all_section">
+      <section class="passport_sec landing_passport_sec">
+        <div class="container">
+          <div class="review_borderbottom">
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="tab nav nav-tabs ptab_main">
+                  <li id="listone">
+                    <a data-toggle="tab" href="JavaScript:Void(0)" class="active">
+                      <div class="step_icon">1</div>
+                      <div class="step_label">Form</div>
+                    </a>
+                  </li>
+                  <li class="tab_line"></li>
+                  <li id="listtwo">
+                    <a data-toggle="tab" href="JavaScript:Void(0)">
+                      <div class="step_icon">2</div>
+                      <div class="step_label">Review</div>
+                    </a>
+                  </li>
+                  <li class="tab_line"></li>
+                  <li id="listthree">
+                    <a data-toggle="tab" href="JavaScript:Void(0)">
+                      <div class="step_icon">3</div>
+                      <div class="step_label">Submit</div>
+                    </a>
+                  </li>
+                </ul>
               </div>
-
-
-             <div class="col-sm-4">
-                  <label for="Name"><h4 style="color:black;"><b>Pin Code<b style="color:red;">*</b></b></h4></label>
-                 <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-             </div>
-
-            <div class="col-sm-4">
-                <label for="Name"><h4 style="color:black;"><b>State/UT<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-
             </div>
- </div>
-
-             <div class="col-sm-12">
-
-                <h4 style="color:blue;"><b>Contact Details</b></h4>
-
-                <div class="col-sm-4">
-                <label for="Name"><h4 style="color:black;"><b>Mobile number<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
+          </div>
+        </div>
+        <div class="dsc_r_block">
+          <div class="card_gst_type">
+            <div class="">
+              <div class="tab-content tab-inner-content">
+                <div id="pform" class="tabcontent tab-pane fade in active passport_form">
+                  <div class="sec_wrapper clearfix">
+                    <div class="container-fluid">
+                      <div class="">
+                        <h4 class="rb_head common_head">MSME Application Form </h4>
+                      </div>
+                      <div id="plc_div">
+                        <form method="post" id="register_form" action="https://www.meraprofit.com/finance/msme/user_register">
+                          <input type="hidden" name='order_id' value="" />
+                          <input type="hidden" name="service_name" value="msme" />
+                          <div class="section1">
+                            <div class="row">
+                              <div class="section1_heading">Business Details</div>
+                            </div>
+                            <div class="section1_body">
+                              <div class="row">
+                                <div class="part3 partc col-md-3">
+                                  <div class="r1head">Select Type of Business <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="company" id="company">
+                                      <option value="">Select Type of Business</option>
+                                      <option value="proprietor">Proprietor/Single Owner</option>
+                                      <option value="partnership">Partnership Firm</option>
+                                      <option value="LLp">Limited Liability Partnership (LLP)</option>
+                                      <option value="PvtLTd" selected>Private Limited Company</option>
+                                      <option value="OPC">One Person Company</option>
+                                      <option value="Society">Society/ Club/ Trust/ AOP</option>
+                                      <option value="huf">Hindu Undivided Family (HUF)</option>
+                                    </select>
+                                    <div id="plc_error_district_plc" class="clearfix form_rules">
+                                      <span class="company_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part1 partc col-md-3">
+                                  <div class="r1head">Name of Applicant <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="text" name="name" id="name" value="">
+                                    <div id="plc_error_plcname" class="clearfix form_rules">
+                                      <span class="name_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part2 partc col-md-3">
+                                  <div class="r1head">Name of Business <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="text" name="name_of_enterprise" id="enterprise" value="">
+                                    <div id="plc_error_tradename_plc" class="clearfix form_rules">
+                                      <span class="name_of_enterprise_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part3 partc col-md-3">
+                                  <div class="r1head">Nature Of Business <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="nature_of_business" id="nature_of_business">
+                                      <option value="">Select Nature Of Business</option>
+                                      <option value="Manufacturer">Manufacturer</option>
+                                      <option value="Services">Services</option>
+                                      <option value="Others">Others</option>
+                                    </select>
+                                    <div id="plc_error_district_plc" class="clearfix form_rules">
+                                      <span class="nature_of_business_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <!--<div class="part2 partc col-md-4"><div class="r1head ">Date of commencement<span>*</span></div><div class="r1data"><input type="text" name="start_date" id="start_date" autocomplete="off" placeholder="dd-mm-yyyy" maxlength="10" value=""><div id="start_date_error" class="clearfix form_rules"><span class="start_date_error"></span></div></div></div>-->
+                                <div class="part3 partc col-md-3">
+                                  <div class="r1head">Social Category <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="social_category" id="social_category">
+                                      <option value="">Select Social Category</option>
+                                      <option value="General">General</option>
+                                      <option value="SC">SC </option>
+                                      <option value="ST">ST </option>
+                                      <option value="OBC">OBC </option>
+                                    </select>
+                                    <div id="plc_error_district_plc" class="clearfix form_rules">
+                                      <span class="social_category_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part3 partc col-md-3">
+                                  <div class="r1head">Specially Abled(DIVYANG) <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="physically_handicapped" id="physically_handicapped">
+                                      <option value="">Select Specially Abled(DIVYANG)</option>
+                                      <option value="No">No</option>
+                                      <option value="Yes">Yes</option>
+                                    </select>
+                                    <div id="plc_error_district_plc" class="clearfix form_rules">
+                                      <span class="physically_handicapped_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part2 partc col-md-3">
+                                  <div class="r1head">Do You have a GST? <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="gst" id="gst">
+                                      <option value="">Select</option>
+                                      <option value="No">No</option>
+                                      <option value="Yes">Yes</option>
+                                    </select>
+                                    <div id="plc_error_gst" class="clearfix form_rules">
+                                      <span class="gst_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="section1_heading">Employee Details</div>
+                                <div class="part2 partc col-md-3">
+                                  <div class="r1head">No. of persons employed- Male <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="number" name="male" id="male" value="">
+                                    <div id="plc_error_male" class="clearfix form_rules">
+                                      <span class="male_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part2 partc col-md-3">
+                                  <div class="r1head">No. of persons employed- Female <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="number" name="female" id="female" value="">
+                                    <div id="plc_error_female" class="clearfix form_rules">
+                                      <span class="female_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="part2 partc col-md-3" style="display:none;">
+                                  <div class="r1head">Total No. of persons Employed <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="text" name="employed" id="employed" value="">
+                                    <div id="plc_error_tradename_plc" class="clearfix form_rules">
+                                      <span class="employed_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="section1_heading"> Business Address Details</div>
+                                <div class="part1 partc col-md-3">
+                                  <div class="r1head">Address <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input type="text" name="address" id="address" value="">
+                                    <div id="plc_error_house_no_plc" class="clearfix form_rules">
+                                      <span class="address_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part1 partc col-md-3">
+                                  <div class="r1head">Pin Code <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input name="pincode" id="pincode" onkeydown="limit_char_count(this,6);validate_number(event);" onkeyup="limit_char_count(this,6);validate_number(event);" value="">
+                                    <div id="plc_error_pincode_plc" class="clearfix form_rules">
+                                      <span class="pincode_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part2 partc col-md-3">
+                                  <div class="r1head">State/ UT <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <select name="state" id="state">
+                                      <option value="">Select State Name</option>
+                                      <option value="Andaman and Nicobar Islands"> Andaman and Nicobar Islands</option>
+                                      <option value="Andhra Pradesh"> Andhra Pradesh</option>
+                                      <option value="Arunachal Pradesh"> Arunachal Pradesh</option>
+                                      <option value="Assam"> Assam</option>
+                                      <option value="Bihar"> Bihar</option>
+                                      <option value="Chandigarh"> Chandigarh</option>
+                                      <option value="Chhattisgarh"> Chhattisgarh</option>
+                                      <option value="Dadra & Nagar Haveli and Daman & Diu"> Dadra & Nagar Haveli and Daman & Diu</option>
+                                      <option value="Delhi"> Delhi</option>
+                                      <option value="Goa"> Goa</option>
+                                      <option value="Gujarat"> Gujarat</option>
+                                      <option value="Haryana"> Haryana</option>
+                                      <option value="Himachal Pradesh"> Himachal Pradesh</option>
+                                      <option value="Jammu and Kashmir"> Jammu and Kashmir</option>
+                                      <option value="Jharkhand"> Jharkhand</option>
+                                      <option value="Karnataka"> Karnataka</option>
+                                      <option value="Kerala"> Kerala</option>
+                                      <option value="Ladakh"> Ladakh</option>
+                                      <option value="Lakshadweep"> Lakshadweep</option>
+                                      <option value="Madhya Pradesh"> Madhya Pradesh</option>
+                                      <option value="Maharashtra"> Maharashtra</option>
+                                      <option value="Manipur"> Manipur</option>
+                                      <option value="Meghalaya"> Meghalaya</option>
+                                      <option value="Mizoram"> Mizoram</option>
+                                      <option value="Nagaland"> Nagaland</option>
+                                      <option value="Odisha"> Odisha</option>
+                                      <option value="Puducherry"> Puducherry</option>
+                                      <option value="Punjab"> Punjab</option>
+                                      <option value="Rajasthan"> Rajasthan</option>
+                                      <option value="Sikkim"> Sikkim</option>
+                                      <option value="Tamil Nadu"> Tamil Nadu</option>
+                                      <option value="Telangana"> Telangana</option>
+                                      <option value="Tripura"> Tripura</option>
+                                      <option value="Uttar Pradesh"> Uttar Pradesh</option>
+                                      <option value="Uttarakhand"> Uttarakhand</option>
+                                      <option value="West Bengal"> West Bengal</option>
+                                    </select>
+                                    <div id="plc_error_state_plc" class="clearfix form_rules">
+                                      <span class="state_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="section1_heading"> Contact Details</div>
+                                <div class="part1 partc col-md-3">
+                                  <div class="r1head">Mobile No. <span>*</span>
+                                  </div>
+                                  <div class="input-group r1data">
+                                    <span class="input-group-addon" id="basic-addon1">+91</span>
+                                    <input type="text" name="mobile" id="mobile" maxlength="10" class="form-control" value="">
+                                    <div id="plc_error_plc_cont_mob" class="clearfix form_rules">
+                                      <span class="mobile_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="part1 partc col-md-3">
+                                  <div class="r1head">E-Mail Id <span>*</span>
+                                  </div>
+                                  <div class="r1data">
+                                    <input name="email" id="email" value="">
+                                    <div id="plc_error_plc_cont_email" class="clearfix form_rules">
+                                      <span class="email_error"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="declaration_main">
+                              <div class="llp_declaration_box col-sm-12">I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.</div>
+                              <div class="declaration_condition col-md-12 ">
+                                <input type="checkbox" name="llp_declaration_box" value="1" id="tc" />
+                                <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
+                                  <b>
+                                    <u>I Agree ALL Terms And Conditions</u>
+                                  </b>
+                                </a>
+                                <div id="llp_error_llp_declaration_box" class="clearfix form_rules">
+                                  <span class="term_error"></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="passport_btn">
+                              <input type="submit" name="PassPortBtnSubmit" id="term" class="btn btn-block btn-primary click1" value="CONTINUE" />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                 <div class="col-sm-4">
-                <label for="Name"><h4 style="color:black;"><b>E-mail Id<b style="color:red;">*</b></b></h4></label>
-                <input type="text" class="form-control" name="Firstname"  autocomplete="false">
-                </div>
-
-             </div>
-
-
-
-
-                <div>
-                    <hr>
-                  <br>
-                                I, the Applicant, in the capacity of Himself/Herself do hereby declare that what is stated above is true to the best of my knowledge of my information and belief.
-                </div>
-                <div>
-                    <br>
-                     <input type="checkbox" name="prop_declaration_box" value="1" id="tc" />
-                              <a href="https://www.meraprofit.com/terms-and-conditions" target="_blank" class="declaration_condition_link">
-                                <b>
-                                  <u>I Agree ALL Terms And Conditions</u>
-                                </b>
-                              </a>
-                </div>
-               <div class="text-center">
-
-                <br>
-                          <button class="btn btn-primary" type="submit">Continue</button>
-             </div>
-                    <hr style="height:2px;border-width:0;color:gray;background-color:black">
-
-
-                </div>
-
+              </div>
             </div>
+            <div class="disclaimer_sec">
+              <div class="disclaimer_main">
+                <h5>Disclaimer Policy</h5>
+                <div class="disclaimer_text">
+                  <p> This disclaimer is applicable to this website. By using or accessing this website you agree with the terms and conditions as mentioned on this website. This website may contain hyperlinks to websites that are not managed by us. We do not accept any responsibility for the content, the availability or the quality of offers made on external websites. This is just a website that assists on Financial, Taxation & Secretarial Services. This is not a Government Website. We are a Private Company managing this website and providing services and assistance for Business Benefits. Although the greatest possible care has been exercised to ensure the correctness and completeness of the information provided on this website, we do not accept any liability for it. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <style>
+      .links_top_parent {
+        width: 100%;
+        display: inline-block;
+        border-top: 0px solid #fff;
+        padding: 10px 3% 0px 3%;
+      }
 
+      /*footer*/
+      .inditab_footer_links ul li a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 18px;
+        padding-right: 10px
+      }
 
+      .inditab_socials_links ul li a img {
+        width: 20px;
+        height: 20px
+      }
 
-      </form>
-          <br>
-</div>
+      .links_top_parent {
+        width: 100%;
+        display: inline-block;
+        border-top: 0px solid #fff;
+        padding-top: 10px;
+        padding-bottom: 0px
+      }
 
+      /*.inditab_socials_links{max-width:220px;width:100%;float:left}*/
+      .inditab_footer_links {
+        max-width: calc(100% - 220px);
+        width: 100%;
+        float: left
+      }
 
-</div>
+      .inditab_footer_links ul li {
+        position: relative
+      }
 
+      .inditab_footer_links ul li:after {
+        content: " ";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: -8px;
+        top: 8px;
+        border-radius: 50%
+      }
 
-</div>
+      .inditab_footer_links ul li:first-child:after {
+        background-color: transparent
+      }
 
+      .inditab_footer_links ul li a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 18px;
+        padding-right: 10px
+      }
 
-{% endblock content %}
+      .inditab_socials_links ul li a img {
+        width: 20px;
+        height: 20px
+      }
+
+      .inditab_copyright {
+        width: 100%;
+        display: inline-block;
+        background-color: #481625;
+        padding: 10px 0
+      }
+
+      .inditab_copyright p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+        text-align: center
+      }
+
+      .new_flight_foot {
+        background-color: #5e2133;
+        padding: 14px 0 0
+      }
+
+      .inditab_footer_links ul li a {
+        font-size: 12px;
+        color: #fff;
+        line-height: 18px;
+        padding-right: 10px;
+      }
+
+      .inditab_footer_links ul li a:hover {
+        color: #f57349;
+        text-decoration: none;
+      }
+
+      .payment_secure_in li a img {
+        display: block;
+        margin: 0px auto 5px auto;
+      }
+
+      .payment_secure_in li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0px 50px;
+        display: block;
+      }
+
+      .payment_secure {
+        width: 100%;
+        padding: 25px 0px;
+        background-color: #fff;
+      }
+
+      .payment_secure_in li {
+        width: 33.33%;
+        float: left;
+        text-align: center;
+      }
+
+      .payment_secure_in li a:hover {
+        text-decoration: none;
+      }
+
+      .payment_secure_in li h4 {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #365371;
+      }
+
+      .payment_secure_in li p {
+        font-size: 16px;
+        color: #2e3134;
+        line-height: 20px;
+      }
+
+      .msme_header {
+        background: linear-gradient(to right, #002b73 66%, #22a2d0);
+        padding: 0px 45px;
+        width: 100%;
+        display: block;
+        border: none;
+      }
+
+      .msme_header .navbar-default,
+      .msme_header .top_cutomer {
+        background: none;
+        background-image: none;
+      }
+
+      .footer_msme_new {
+        width: 100%;
+        display: inline-block;
+      }
+
+      .footer_msme_new .links_top_parent {
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+    </style>
+    <section class="payment_secure hidden-xs">
+      <div class="container-fluid custom_container">
+        <div class="row">
+          <ul class="list-unstyled list-inline payment_secure_in">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="https://www.meraprofit.com/assets/image/secure_pay.png" alt="100% Secure Payments" width="100%" height="100%" />
+                <h4>100% Secure Payments</h4>
+                <p>Moving your card details to a much more secured place</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="https://www.meraprofit.com/assets/image/trust_pay.png" alt="Trust Pay" width="100%" height="100%" />
+                <h4>Trust Pay</h4>
+                <p>100% secure payment. SSL Protection</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meraprofit.com/support">
+                <img src="https://www.meraprofit.com/assets/image/24x7_support.png" alt="Support" width="100%" height="100%" />
+                <h4>Support</h4>
+                <p>We’re here to help. Have a query and need help? Click here</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="new_flight_foot hidden-xs">
+      <div class="container-fluid custom_container">
+        <div class="row">
+          <div class="links_top_parent">
+            <div class="inditab_footer_links">
+              <ul class="list-inline list-unstyled">
+                <li>
+                  <a href="https://www.meraprofit.com/about-us">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/contact-us">COMPLAINTS</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/privacy-policy">PRIVACY</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/terms-and-conditions">TERMS OF USE</a>
+                </li>
+                <li>
+                  <a href="https://www.meraprofit.com/support">CUSTOMER SERVICE</a>
+                </li>
+              </ul>
+            </div>
+            <div class="inditab_socials_links">
+              <ul class="list-inline list-unstyled pull-right">
+                <li>
+                  <a href="https://www.facebook.com/meraprofit/" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/fb.png" alt="Meraprofit Facebook" width="100%" height="100%" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UC5FaqGTSCWebHCg2egEGVJg" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/youtube.png" alt="Meraprofit Youtube" width="100%" height="100%" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/meraprofit/" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/insta.png" alt="Meraprofit Instagram" width=" " height=" ">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://in.linkedin.com/company/meraprofit" target="_blank">
+                    <img src="https://www.meraprofit.com/assets/image/linkedin.png" alt="Meraprofit linkedin" width="100%" height="100%" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inditab_copyright">
+        <div class="container-fluid custom_container">
+          <p>© 2021 Meraprofit Quicksolutions Pvt Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <footer class="mobile_footer hidden-lg hidden-md hidden-sm">
+      <div class="top_m_links">
+        <ul>
+          <li>
+            <a href="https://www.meraprofit.com/about-us">ABOUT US</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/contact-us">COMPLAINTS</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/privacy-policy">PRIVACY</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/terms-and-conditions">TERMS OF USE</a>
+          </li>
+          <li>
+            <a href="https://www.meraprofit.com/support">CUSTOMER SERVICE</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inditab_socials_links">
+        <ul class="list-inline list-unstyled text-center">
+          <li>
+            <a href="https://www.facebook.com/meraprofit/" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/fb.png" alt="Meraprofit Facebook Page" width="100%" height="100%" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC5FaqGTSCWebHCg2egEGVJg" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/youtube.png" alt="Meraprofit Youtube Page" width="100%" height="100%" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/meraprofit/" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/insta.png" alt="Meraprofit Instagram Page" width="100%" height="100%" />
+            </a>
+          </li>
+          <li>
+            <a href="https://in.linkedin.com/company/meraprofit" target="_blank">
+              <img src="https://www.meraprofit.com/assets/image/linkedin.png" alt="Meraprofit Linkedin Page" width="100%" height="100%" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="inditab_copyright">
+        <div class="container-fluid custom_container">
+          <p>© 2021 Meraprofit Quicksolutions Pvt Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var Base_URL = 'https://www.meraprofit.com/';
+    </script>
+
+    <script src="{% static 'MSME_app/js/finance/meraprofit/jquery-2.2.4.min.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/bootstrap.min.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/rd-navbar.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/script.js'%}"></script>
+    <script src="{% static 'MSME_app/js/finance/meraprofit/custom.js'%}"></script>
+    <script type="text/javascript" src="{% static 'MSME_app/js/finance/login.js'%}"></script>
+
+    <script>
+      $('#company').change(function() {
+        var company = $(this).val();
+        if (company == 'proprietor') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-proprietor';
+        } else if (company == 'partnership') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-partnership';
+        } else if (company == 'LLp') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-LLp';
+        } else if (company == 'PvtLTd') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-company';
+        } else if (company == 'OPC') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-opc';
+        } else if (company == 'Society') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-society';
+        } else if (company == 'huf') {
+          $('.loader_upload_overlay').show();
+          window.location.href = Base_URL + 'msme-registraion-for-huf';
+        }
+      });
+    </script>
+    <script>
+      $("form#register_form").submit(function(e) {
+        e.preventDefault();
+        var nospecial = /^[^*|\":<>[\]{}`\\()';@&$0-9]+$/;
+        var nospecial1 = /^[^*|\":<>[\]{}`\\()';0-9]/;
+        var flag = 1;
+        var name = $('#name').val();
+        var enterprise = $('#enterprise').val();
+        var company = $('#company').val();
+        var address = $('#address').val();
+        var state = $('#state').val();
+        var pincode = $('#pincode').val();
+        var mobile = $('#mobile').val();
+        var email = $('#email').val();
+        var employed = $('#employed').val();
+        var nature_of_business = $('#nature_of_business').val();
+        var social_category = $('#social_category').val();
+        var physically_handicapped = $('#physically_handicapped').val();
+        var term = $('#tc').prop("checked");
+        var male = parseInt($('#male').val());
+        var female = parseInt($('#female').val());
+        var total_employee = (male + female);
+        $('#employed').val(total_employee);
+        var gst = $('#gst').val();
+        var focus_col_id = '';
+        if (company == '' || company == undefined) {
+          flag = 2;
+          e.preventDefault();
+          if (focus_col_id == '') {
+            focus_col_id = 'company';
+          }
+          $('.company_error').html("Please select your company name").css('color', 'red');
+        } else {
+          $('.company_error').html(" ");
+        }
+        if (name == '' || name == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'name';
+          }
+          $(".name_error").html("Please enter your applicant name").css('color', 'red');
+        } else if (name.length < 2 || name.length > 55) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'name';
+          }
+          $('.name_error').html("Please enter your applicant name at least 2-55 charcter").css('color', 'red');
+        } else if (!(nospecial.test(name))) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'name';
+          }
+          $('.name_error').html('Special character and numeric digit. is not allowed').css('color', 'red');
+        } else {
+          $('#name').css("border", "1px solid #ccc");
+          $('.name_error').html('');
+        }
+        if (enterprise == "" || enterprise == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'enterprise';
+          }
+          $(".name_of_enterprise_error").html("Please enter your name of enterprise").css('color', 'red');
+        } else if (enterprise.length < 2 || enterprise.length > 55) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'enterprise';
+          }
+          $('.name_of_enterprise_error').html("Please enter your name of enterprise at least 2-55 charcter").css('color', 'red');
+        } else {
+          $('#enterprise').css("border", "1px solid #ccc");
+          $('.name_of_enterprise_error').html('');
+        }
+        if (nature_of_business == "" || nature_of_business == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'nature_of_business';
+          }
+          $('.nature_of_business_error').html("Please select nature of business").css('color', 'red');
+        } else {
+          $('#nature_of_business').css("border", "1px solid #ccc");
+          $('.nature_of_business_error').html("").css('color', 'red');
+        }
+        if (social_category == "" || social_category == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'social_category';
+          }
+          $('.social_category_error').html("Please select social category").css('color', 'red');
+        } else {
+          $('#social_category').css("border", "1px solid #ccc");
+          $('.social_category_error').html("").css('color', 'red');
+        }
+        if (physically_handicapped == "" || physically_handicapped == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'physically_handicapped';
+          }
+          $('.physically_handicapped_error').html("Please select physically handicapped").css('color', 'red');
+        } else {
+          $('#physically_handicapped').css("border", "1px solid #ccc");
+          $('.physically_handicapped_error').html("").css('color', 'red');
+        }
+        if (gst == '' || gst == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'gst';
+          }
+          $(".gst_error").html("Please select gst type").css('color', 'red');
+        } else {
+          $('.gst_error').html(" ");
+          $('#gst').css("border", "1px solid #ccc");
+        }
+        if ($('#male').val() == '' || $('#male').val() == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'male';
+          }
+          $(".male_error").html("Please enter no. of persons employed-male").css('color', 'red');
+        } else {
+          $('#male').css("border", "1px solid #ccc");
+          $('.male_error').html(" ");
+        }
+        if ($('#female').val() == '' || $('#female').val() == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'female';
+          }
+          $(".female_error").html("Please enter no. of persons employed-female").css('color', 'red');
+        } else {
+          $('#female').css("border", "1px solid #ccc");
+          $('.female_error').html(" ");
+        }
+        if (address == "" || address == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'address';
+          }
+          $('.address_error').html("Please enter your address line 1").css('color', 'red');
+        } else if (address.length < 5 || address.length > 300) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'address';
+          }
+          $('.address_error').html("Please enter your name of address at least 5-300 charcter").css('color', 'red');
+        } else {
+          $('#address').css("border", "1px solid #ccc");
+          $('.address_error').html(" ");
+        }
+        if (pincode == "" || pincode == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'pincode';
+          }
+          $('.pincode_error').html("Please enter your pincode").css('color', 'red');
+        } else if ((pincode.length) < 6 || (pincode.length) > 6) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'pincode';
+          }
+          $('.pincode_error').html("Enter your 6 digit pincode").css('color', 'red');
+        } else if (!(/^[0-9]+$/.test(pincode))) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'pincode';
+          }
+          $('.pincode_error').html("Enter your numeric pincode").css('color', 'red');
+        } else {
+          $('#pincode').css("border", "1px solid #ccc");
+          $('.pincode_error').html(" ");
+        }
+        if (state == "" || state == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'state';
+          }
+          $('.state_error').html("Please select your state name").css('color', 'red');
+        } else {
+          $('#state').css("border", "1px solid #ccc");
+          $('.state_error').html(" ");
+        }
+        if (mobile == "" || mobile == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'mobile';
+          }
+          $('.mobile_error').html("Please enter your mobile number").css('color', 'red');
+        } else if ((mobile.length) < 10 || (mobile.length) > 10) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'mobile';
+          }
+          $('.mobile_error').html("Please enter your 10 digit mobile number").css('color', 'red');
+        } else if (!(/^[0-9]+$/.test(mobile))) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'mobile';
+          }
+          $('.mobile_error').html("Enter your only digit mobile number").css('color', 'red');
+        } else {
+          $('#mobile').css("border", "1px solid #ccc");
+          $('.mobile_error').html('');
+        }
+        if (email == "" || email == undefined) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'email';
+          }
+          $('.email_error').html("Please enter your email address").css('color', 'red');
+        } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email))) {
+          flag = 2;
+          if (focus_col_id == '') {
+            focus_col_id = 'email';
+          }
+          $('.email_error').html("Enter your valid email address").css('color', 'red');
+        } else {
+          $('#email').css("border", "1px solid #ccc");
+          $('.email_error').html(" ");
+        }
+        if (term == false) {
+          flag = 2;
+          $(".term_error").html("Please checked terms and conditions").css('color', 'red');
+        } else {
+          $(".term_error").html(" ");
+        }
+        if (focus_col_id != undefined && focus_col_id != "") {
+          $('#' + focus_col_id).focus().css("border", "1px solid red");
+        } else {
+          if (flag == 1) {
+            document.getElementById("register_form").submit();
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
